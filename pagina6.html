@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="js/pag6.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/w3.css" media="screen" />	
 		<link href="https://fonts.googleapis.com/css?family=Acme|Boogaloo" rel="stylesheet"/>	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 	<style type="text/css">
 			.w3-Acme{
@@ -57,33 +58,48 @@
 			<!--Esto es el primer ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links1:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una serie de links.</p>	
 				
 				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="ejemplo1a" class="w3-accordion-content w3-show">
-						  <a href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
-						  <a href="http://www.meteo.cat/">Meteocat.cat</a>
-						  <a href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat</a>
+					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
+						<button onclick="ejemplo1('ejemplo1a')" class="w3-btn-block w3-left-align">Accordion 1 <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo1a" class="w3-accordion-content ">
+						  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
+						  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
+						  <a class="w3-text-blue" href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat</a>
 						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion 2</button>
-						<div id="ejemplo1b" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="https://www.feec.cat/">Feec.cat</a>
-						  <a class="w3-padding-16" href="http://www.fedme.es/">Fedme.es</a>
-						  <a class="w3-padding-16" href="http://theuiaa.org/">Uiaa.org</a>
+						<button onclick="ejemplo1('ejemplo1b')" class="w3-btn-block w3-left-align"> Accordion 2 <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo1b" class="w3-accordion-content ">
+						  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
+						  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
+						  <a class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org</a>
 						</div>
 					</div>
 					
 					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					
+						
+											
+								&ltdiv class="w3-container w3-Acme"&gt <br>
+									&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" &gt <br>
+										&ltbutton onclick="ejemplo1('ejemplo1a')" class="w3-btn-block w3-left-align"&gtAccordion 1 &lti class="fa fa-caret-down"&gt&lt/i&gt &lt/button&gt <br>
+										&ltdiv id="ejemplo1a" class="w3-accordion-content "&gt <br>
+											 &lta class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat&lt/a&gt <br>
+											 &lta class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat&lt/a&gt <br>
+											 &lta class="w3-text-blue" href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat&lt/a&gt <br>
+										&lt/div&gt <br>
+										&ltbutton onclick="ejemplo1('ejemplo1b')" class="w3-btn-block w3-left-align"&gt Accordion 2 &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+										&ltdiv id="ejemplo1b" class="w3-accordion-content "&gt <br>
+											&lta class="w3-text-blue" href="https://www.feec.cat/">Feec.cat&lt/a&gt <br>
+											&lta class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es&lt/a&gt <br>
+											 &lta class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org&lt/a&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>		
+								&lt/div&gt <br>
+						
+					
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
