@@ -48,7 +48,7 @@
 		
 	<!--Esto es la zona de la presentacion del proyecto-->	
 		<div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border w3-leftbar w3-right w3-Acme  w3-margin-bottom w3-twothird" style="width:80%">
-			<h2 class="w3-wide w3-text-shadow  w3-Acme">W3.CSS Accordions</h2>
+			<h2 class="w3-wide w3-text-shadow  w3-Acme">W3.CSS Alert</h2>
 			<p>Aqui tiene que venir descripcion del componente elejido ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
 		</div>
 		
@@ -57,33 +57,58 @@
 			<!--Esto es el primer ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links1:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Displaying Alerts:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">En este ejemplo, se muestran los tipos de alertas que hay (Peligro, Advertencia, Realizado favorablemente e Informacion), 
+				y la manera de mostrarlas.</p>	
 				
-				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
-						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
-						</div>
+				<div class="w3-container w3-Acme w3-tiny ">
+					<div class="w3-panel w3-red w3-margin-left w3-margin-right w3-card-16" >
+						<h5>Danger!</h5>
+						<p>Red often indicates a dangerous or negative situation.</p>
+					</div>
+
+					<div class="w3-panel w3-yellow w3-margin-left w3-margin-right w3-card-16">
+						<h5>Warning!</h5>
+						<p>Yellow or orange often indicates a warning that might need attention.</p>
+					</div>
+
+					<div class="w3-panel w3-green w3-margin-left w3-margin-right w3-card-16">
+						<h5>Success!</h5>
+						<p>Green often indicates something successful or positive.</p>
+					</div>
+
+					<div class="w3-panel w3-blue w3-margin-left w3-margin-right w3-card-16">
+						<h5>Info!</h5>
+						<p>Blue often indicates a neutral informative change or action.</p>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+						<div class="w3-code htmlHigh notranslate w3-small">			
+								
+							
+							&ltdiv class="w3-panel w3-red w3-margin-left w3-margin-right w3-card-16" &gt <br>
+								&lth5&gt Danger!&lt/h5&gt <br>
+								&ltp&gt Red often indicates a dangerous or negative situation.&lt/p&gt <br>
+							&lt/div&gt <br>
+
+							&ltdiv class="w3-panel w3-yellow w3-margin-left w3-margin-right w3-card-16"&gt <br>
+								&lth5&gtWarning!&lt/h5&gt <br>
+								&ltp&gtYellow or orange often indicates a warning that might need attention.&lt/p&gt <br>
+							&lt/div&gt <br>
+
+							&ltdiv class="w3-panel w3-green w3-margin-left w3-margin-right w3-card-16"&gt <br>
+								&lth5&gtSuccess!&lt/h5&gt <br>
+								&ltp&gtGreen often indicates something successful or positive.&lt/p&gt <br>
+							&lt/div&gt <br>
+
+							&ltdiv class="w3-panel w3-blue w3-margin-left w3-margin-right w3-card-16"&gt <br>
+								&lth5&gtInfo!&lt/h5&gt <br>
+								&ltp&gtBlue often indicates a neutral informative change or action.&lt/p&gt <br>
+							&lt/div&gt <br>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
@@ -199,6 +224,10 @@
 			</div>		
 		</footer>
 	</body>
+	<script src="http://www.w3schools.com/lib/w3codecolor.js"></script>
+	<script>
+		w3CodeColor();
+	</script>
 
 </html>
 
