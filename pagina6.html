@@ -51,7 +51,9 @@
 	<!--Esto es la zona de la presentacion del proyecto-->	
 		<div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border w3-leftbar w3-right w3-Acme  w3-margin-bottom w3-twothird" style="width:80%">
 			<h2 class="w3-wide w3-text-shadow  w3-Acme">W3.CSS Accordions</h2>
-			<p>Aqui tiene que venir descripcion del componente elejido ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+			<p>Este componente es un menu desplegable al cual se le pueden añadir diversas funcionalidades (cambiar el color de los botones y el fondo, crear 
+			animaciones, señalar la pestaña desplegada, entre otros), y otros componentes (meter dentro listas,imagenes, tablas, informacion, entre otros), 
+			para representar listas desplegables, barras de navegacion desplegables etc.</p>	
 		</div>
 		
 		<!--Esto es la zona de los ejemplos-->	
@@ -184,7 +186,7 @@
 							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Irwin Wade</li>
 						  </ul>  
 						</div>
-						<button onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Stargate <i class="fa fa-caret-down"></i></button>
+						<button onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Stargate SG-1<i class="fa fa-caret-down"></i></button>
 						<div id="ejemplo3b" class="w3-accordion-content">
 						  <ul class="w3-ul">
 							<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Samantha Carter</li>
@@ -216,7 +218,7 @@
 											&ltli> &ltimg src="imagenes/iavatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtIrwin Wade&lt/li&gt <br>
 										&lt/ul&gt   <br>
 									&lt/div&gt <br>
-									&ltbutton onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gtPersonajes Stargate &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+									&ltbutton onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gtPersonajes Stargate SG-1&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
 									&ltdiv id="ejemplo3b" class="w3-accordion-content"&gt <br>
 										&ltul class="w3-ul"&gt <br>
 											&ltli&gt &ltimg src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtSamantha Carter&lt/li&gt <br>
@@ -244,33 +246,74 @@
 			<!--Esto es el cuarto ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links4:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion Content:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra contenido con infomacion diversa.</p>	
 				
 				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
+					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
+						<button onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"> Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo4a" class="w3-accordion-content">
+							<h5 class="w3-text-shadow">Sinopsis:</h5>
+							<p>Segunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en Normandía, a un grupo de soldados americanos se le encomienda una 
+							peligrosa misión: poner a salvo al soldado James Ryan. Los hombres de la patrulla
+							del capitán John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra. 
+							Lo único que se sabe del soldado Ryan es que se lanzó con su escuadrón de paracaidistas detrás de las líneas enemigas. (FILMAFFINITY)</p>
 						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
+						<button onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Stargate SG-1<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo4b" class="w3-accordion-content">
+						  <h5 class="w3-text-shadow">Sinopsis:</h5>
+							<p>Esta es la lista de episodios de Stargate SG-1, serie de televisión de ciencia ficción militar producida en Canadá y Estados Unidos y creada por Brad Wright y Jonathan Glassner. 
+							La serie continúa la historia de la película de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueólogo Daniel Jackson 
+							empleaban un antiguo aparato alienígena llamado «Stargate» para viajar a un planeta en el que un extraterrestre llamado Ra oprimía a los humanos que allí vivían haciéndose pasar 
+							por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un año después de los sucesos de la película,1 muestra que Ra no fue el único alienígena que utilizó 
+							los Stargates para transportar esclavos humanos a muchos planetas durante miles de años.</p>
+						</div>
+						<button onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Siete años en el Tibet<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo4c" class="w3-accordion-content">
+							<h5 class="w3-text-shadow">Sinopsis:</h5>
+							<p>Basada en un hecho real, Siete Años en el Tíbet narra la aventura de Heinrich Harrer, un alpinista austríaco que en otoño de 1939 inició una expedición para escalar
+							el Everest. Su intento se truncó por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentración inglés en la India junto con 
+							su compañero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del Tíbet, un lugar
+							prohibido para los extranjeros. Allí Harrer entabló una profunda amistad con el actual Dalai Lama, un niño por entonces, y se contagió de su 
+							espiritualidad.</p>
 						</div>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+						<div class="w3-code htmlHigh notranslate w3-small">			
+							
+							&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" &gt <br>
+								&ltbutton onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gt Salvar al soldado Ryan &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+								&ltdiv id="ejemplo4a" class="w3-accordion-content"&gt <br>
+									&lth5 class="w3-text-shadow">Sinopsis:&lt/h5&gt <br>
+									&ltp&gtSegunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en Normandía, a un grupo de soldados americanos se le encomienda una  <br>
+									peligrosa misión: poner a salvo al soldado James Ryan. Los hombres de la patrulla <br>
+									del capitán John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra.  <br>
+									Lo único que se sabe del soldado Ryan es que se lanzó con su escuadrón de paracaidistas detrás de las líneas enemigas. (FILMAFFINITY)&lt/p&gt <br>
+								&lt/div&gt <br>
+								&ltbutton onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gtStargate SG-1&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+								&ltdiv id="ejemplo4b" class="w3-accordion-content"&gt <br>
+									 &lth5 class="w3-text-shadow">Sinopsis:&lt/h5&gt <br>
+									&ltp&gtEsta es la lista de episodios de Stargate SG-1, serie de televisión de ciencia ficción militar producida en Canadá y Estados Unidos y creada por Brad Wright y Jonathan Glassner.  <br>
+									La serie continúa la historia de la película de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueólogo Daniel Jackson  <br>
+									empleaban un antiguo aparato alienígena llamado «Stargate» para viajar a un planeta en el que un extraterrestre llamado Ra oprimía a los humanos que allí vivían haciéndose pasar  <br>
+									por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un año después de los sucesos de la película,1 muestra que Ra no fue el único alienígena que utilizó  <br>
+									los Stargates para transportar esclavos humanos a muchos planetas durante miles de años.&lt/p&gt <br>
+								&lt/div&gt <br>
+								&ltbutton onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gtSiete años en el Tibet&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+								&ltdiv id="ejemplo4c" class="w3-accordion-content"&gt <br>
+									&lth5 class="w3-text-shadow"&gtSinopsis:&lt/h5&gt <br>
+									&ltp&gtBasada en un hecho real, Siete Años en el Tíbet narra la aventura de Heinrich Harrer, un alpinista austríaco que en otoño de 1939 inició una expedición para escalar <br>
+									el Everest. Su intento se truncó por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentración inglés en la India junto con  <br>
+									su compañero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del Tíbet, un lugar <br>
+									prohibido para los extranjeros. Allí Harrer entabló una profunda amistad con el actual Dalai Lama, un niño por entonces, y se contagió de su  <br>
+									espiritualidad.&lt/p&gt <br>
+								&lt/div&gt <br>
+							&lt/div&gt <br>
+						
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
