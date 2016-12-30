@@ -60,27 +60,32 @@
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
 				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una serie de links.</p>	
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una serie de links.<br>&emsp;</p>	
 				
 				<div class="w3-container w3-Acme" >
 					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
-						<button onclick="ejemplo1('ejemplo1a')" class="w3-btn-block w3-left-align">Accordion 1 <i class="fa fa-caret-down"></i></button>
+						<button onclick="ejemplo('ejemplo1a')" class="w3-btn-block w3-left-align">Accordion 1 <i class="fa fa-caret-down"></i></button>
 						<div id="ejemplo1a" class="w3-accordion-content ">
 						  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
 						  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
 						  <a class="w3-text-blue" href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat</a>
 						</div>
-						<button onclick="ejemplo1('ejemplo1b')" class="w3-btn-block w3-left-align"> Accordion 2 <i class="fa fa-caret-down"></i></button>
+						<button onclick="ejemplo('ejemplo1b')" class="w3-btn-block w3-left-align"> Accordion 2 <i class="fa fa-caret-down"></i></button>
 						<div id="ejemplo1b" class="w3-accordion-content ">
 						  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
 						  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
 						  <a class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org</a>
 						</div>
+						<button onclick="ejemplo('ejemplo1c')" class="w3-btn-block w3-left-align"> Accordion 3 <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo1c" class="w3-accordion-content ">
+						  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
+						  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informático en el lado del mal</a>
+						</div>
 					</div>
 					
 					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
 						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-							<div class="w3-code htmlHigh notranslate">			
+							<div class="w3-code htmlHigh notranslate w3-small">			
 								&lt;div class="w3-container w3-Acme"&gt;<br>
 									&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" &gt <br>
 										&ltbutton onclick="ejemplo1('ejemplo1a')" class="w3-btn-block w3-left-align"&gtAccordion 1 &lti class="fa fa-caret-down"&gt&lt/i&gt &lt/button&gt <br>
@@ -95,10 +100,14 @@
 											&lta class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es&lt/a&gt <br>
 											 &lta class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org&lt/a&gt <br>
 										&lt/div&gt <br>
+										&ltbutton onclick="ejemplo('ejemplo1c')" class="w3-btn-block w3-left-align"&gt Accordion 3 &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+										&ltdiv id="ejemplo1c" class="w3-accordion-content "&gt <br>
+										  &lta class="w3-text-blue" href="http://www.securitybydefault.com/"&gt Securitybydefault.com &lt/a&gt <br>
+										  &lta class=" w3-text-blue" href="http://www.elladodelmal.com/"&gt Un informático en el lado del mal &lt/a&gt <br>
+										&lt/div&gt <br>
 									&lt/div&gt <br>		
 								&lt/div&gt <br>
 							</div>
-					
 					</div>
 				</div>
 			</div>
@@ -107,33 +116,54 @@
 			<!--Esto es el segundo ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links2:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animated Accordions:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion animado" que se despliega utilizando los efectos Zoom, Top y Fading, y muestra una serie de links.</p>	
 				
-				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
+				<div class="w3-container w3-Acme" >
+					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
+						<button onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align"> Animated Accordion Zoom <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo2a" class="w3-accordion-content w3-animate-zoom">
+						  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
+						  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
 						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
+						<button onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align">Animated  Accordion Top <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo2b" class="w3-accordion-content w3-animate-top">
+						  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
+						  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
+						</div>
+						<button onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align">Animated  Accordion Fading<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo2c" class="w3-accordion-content w3-animate-fading">
+						  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
+						  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informático en el lado del mal</a>
 						</div>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+						<div class="w3-code htmlHigh notranslate w3-small">			
+								
+							&ltdiv class="w3-container w3-Acme" &gt <br>
+							&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" &gt <br>
+									&ltbutton onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align"&gt Animated Accordion Zoom &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+									&ltdiv id="ejemplo2a" class="w3-accordion-content w3-animate-zoom" &gt <br>
+										&lta class="w3-text-blue" href="http://web.gencat.cat/ca/inici/" &gt Gencat.cat &lt/a &gt <br>
+										&lta class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat &lt/a &gt <br>
+									&lt/div&gt <br>
+									&ltbutton onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align">Animated  Accordion Top &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+									&ltdiv id="ejemplo2b" class="w3-accordion-content w3-animate-top"&gt <br>
+										&lta class="w3-text-blue" href="https://www.feec.cat/"&gt Feec.cat &lt/a&gt <br>
+										&lta class=" w3-text-blue" href="http://www.fedme.es/"&gt Fedme.es &lt/a&gt <br>
+									&lt/div&gt <br>
+									&ltbutton onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align">Animated  Accordion Fading &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+									&ltdiv id="ejemplo2c" class="w3-accordion-content w3-animate-fading"&gt <br>
+										&lta class="w3-text-blue" href="http://www.securitybydefault.com/"&gt Securitybydefault.com &lt/a&gt <br>
+										&lta class=" w3-text-blue" href="http://www.elladodelmal.com/"&gt Un informático en el lado del mal &lt/a&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt <br>
+							&lt/div&gt	 <br>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
