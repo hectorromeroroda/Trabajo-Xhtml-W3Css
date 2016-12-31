@@ -9,7 +9,9 @@
 		<title>E112 PORTAL WEB DEMO-TUTORIAL FRAMEWORK</title>
 		<script type="text/javascript" src="js/funciones.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/w3.css" media="screen" />	
-		<link href="https://fonts.googleapis.com/css?family=Acme|Boogaloo" rel="stylesheet"/>	
+		<link href="https://fonts.googleapis.com/css?family=Acme|Boogaloo" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+		
 		
 	<style type="text/css">
 			.w3-Acme{
@@ -49,7 +51,8 @@
 	<!--Esto es la zona de la presentacion del proyecto-->	
 		<div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border w3-leftbar w3-right w3-Acme  w3-margin-bottom w3-twothird" style="width:80%">
 			<h2 class="w3-wide w3-text-shadow  w3-Acme">W3.CSS Alert</h2>
-			<p>Aqui tiene que venir descripcion del componente elejido ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+			<p>Este componente es un recuadro de alerta, que puede adoptar distintas formas, colores, tamaños... Dentro de el se pueden poner otros componentes
+			 como pueden ser botones, iconos, imagenes etc.</p>	
 		</div>
 		
 		<!--Esto es la zona de los ejemplos-->	
@@ -175,7 +178,7 @@
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
 				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Closing Alerts:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">En este ejemplo, se muestran los tipos de alertas que hay, pero en este ejemplo se pueden cerrar
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">En este ejemplo, se muestran los tipos de alertas que hay, en este caso se pueden cerrar
 				utilizando la linea siguiente: &ltspan onclick="this.parentElement.style.display='none'" class="w3-closebtn"&gt&times&lt/span&gt, que añade un boton de cierre.</p>	
 				
 				<div class="w3-container w3-Acme w3-tiny ">
@@ -240,33 +243,65 @@
 			<!--Esto es el cuarto ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links4:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Closing Alerts with icons:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">En este ejemplo, se muestran los tipos de alertas que hay, y se le han añadido iconos sacados de google icons.</p>	
 				
 				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
-						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
-						</div>
+					<div class="w3-panel w3-red w3-margin-left w3-margin-right w3-card-16" >
+						<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>
+						<h5>Danger! <i class="material-icons w3-large">pan_tool</i></h5>
+						<p>Red often indicates a dangerous or negative situation.</p>
+					</div>
+
+					<div class="w3-panel w3-yellow w3-margin-left w3-margin-right w3-card-16">
+						<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>
+						<h5>Warning!<i class="material-icons w3-large">warning</i></h5>
+						<p>Yellow or orange often indicates a warning that might need attention.</p>
+					</div>
+
+					<div class="w3-panel w3-green w3-margin-left w3-margin-right w3-card-16">
+						<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>
+						<h5>Success!<i class="material-icons w3-large">done</i></h5>
+						<p>Green often indicates something successful or positive.</p>
+					</div>
+
+					<div class="w3-panel w3-blue w3-margin-left w3-margin-right w3-card-16 ">
+						<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>
+						<h5>Info!<i class="material-icons w3-large ">info</i></h5>
+						<p>Blue often indicates a neutral informative change or action.</p>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+						<div class="w3-code htmlHigh notranslate w3-small">			
+								
+							&ltdiv class="w3-panel w3-red w3-margin-left w3-margin-right w3-card-16" &gt <br>
+								&ltspan onclick="this.parentElement.style.display='none'" class="w3-closebtn"&gt&times;&lt/span&gt <br>
+								&lth5>Danger! &lti class="material-icons w3-large"&gtpan_tool&lt/i&gt&lt/h5&gt <br>
+								&ltp&gtRed often indicates a dangerous or negative situation.&lt/p&gt <br>
+							&lt/div&gt <br>
+
+							&ltdiv class="w3-panel w3-yellow w3-margin-left w3-margin-right w3-card-16"&gt <br>
+								&ltspan onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;&lt/span&gt <br>
+								&lth5&gtWarning!&lti class="material-icons w3-large">warning&lt/i&gt&lt/h5&gt <br>
+								&ltp&gtYellow or orange often indicates a warning that might need attention.&lt/p&gt <br>
+							&lt/div&gt <br>
+
+							&ltdiv class="w3-panel w3-green w3-margin-left w3-margin-right w3-card-16"&gt <br>
+								&ltspan onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;&lt/span&gt <br>
+								&lth5>Success!&lti class="material-icons w3-large"&gtdone&lt/i&gt&lt/h5&gt <br>
+								&ltp>Green often indicates something successful or positive.&lt/p&gt <br>
+							&lt/div&gt <br>
+
+							&ltdiv class="w3-panel w3-blue w3-margin-left w3-margin-right w3-card-16 "&gt <br>
+								&ltspan onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;&lt/span&gt <br>
+								&lth5>Info!&lti class="material-icons w3-large "&gtinfo&lt/i&gt&lt/h5&gt <br>
+								&ltp&gtBlue often indicates a neutral informative change or action.&lt/p&gt <br>
+							&lt/div&gt <br>
+						
+					
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
