@@ -7,7 +7,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>E112 PORTAL WEB DEMO-TUTORIAL FRAMEWORK</title>
-		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript" src="js/pag8.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/w3.css" media="screen" />	
 		<link href="https://fonts.googleapis.com/css?family=Acme|Boogaloo" rel="stylesheet"/>	
 		
@@ -48,8 +48,8 @@
 		
 	<!--Esto es la zona de la presentacion del proyecto-->	
 		<div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border w3-leftbar w3-right w3-Acme  w3-margin-bottom w3-twothird" style="width:80%">
-			<h2 class="w3-wide w3-text-shadow  w3-Acme">W3.CSS Accordions</h2>
-			<p>Aqui tiene que venir descripcion del componente elejido ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+			<h2 class="w3-wide w3-text-shadow  w3-Acme">W3.CSS Modal</h2>
+			<p>Aqui tiene que venir descripcion del componente elejido Â¿?Â¿?Â¿?Â¿?Â¿Â¿?Â¿?Â¿Â¿..................................?Â¿?Â¿?Â¿?Â¿?Â¿?Â¿?Â¿??Â¿Â¿?Â¿Â¿?Â¿Â¿?Â¿?Â¿?Â¿??Â¿?Â¿?</p>	
 		</div>
 		
 		<!--Esto es la zona de los ejemplos-->	
@@ -57,33 +57,121 @@
 			<!--Esto es el primer ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links1:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">W3.CSS Modal:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un Modal, que al abrir-se, muestra informacion estructurada en un 
+				header, contenido y un footer. Tanto para abrir como cerrar-los se utilizan botones que utilizan una funcion javascript.</p>	
 				
-				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
-						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
+				<div class="w3-container w3-Acme w3-row-padding" >
+					
+					<button onclick=abrir('ej1a') class="w3-btn w3-margin-left w3-teal w3-ripple" style="width:30%">Abrir Modal 1</button>
+					<div id="ej1a" class="w3-modal">
+						<div class="w3-modal-content">
+							<header class="w3-container w3-teal"> 
+								<span onclick=cerrar('ej1a') class="w3-closebtn">&times;</span>
+								<h2>Esto es el Header</h2>
+							</header>
+							<div class="w3-container">
+								<p>Aqui va el contenido...</p>
+								<p>Aqui va el contenido...</p>
+							</div>
+							<footer class="w3-container w3-teal">
+								<p>Esto es el Footer</p>
+							</footer>
 						</div>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<button onclick=abrir('ej1b') class="w3-btn w3-green w3-ripple" style="width:30%">Abrir Modal 2</button>
+					<div id="ej1b" class="w3-modal">
+						<div class="w3-modal-content">
+							<header class="w3-container w3-green"> 
+								<span onclick=cerrar('ej1b') class="w3-closebtn">&times;</span>
+								<h2>Esto es el Header</h2>
+							</header>
+							<div class="w3-container">
+								<p>Aqui va el contenido...</p>
+								<p>Aqui va el contenido...</p>
+							</div>
+							<footer class="w3-container w3-green">
+								<p>Esto es el Footer</p>
+							</footer>
+						</div>
+					</div>
+					
+					<button onclick=abrir('ej1c') class="w3-btn  w3-margin-right w3-blue w3-ripple" style="width:30%">Abrir Modal 3</button>
+					<div id="ej1c" class="w3-modal">
+						<div class="w3-modal-content">
+							<header class="w3-container w3-blue"> 
+								<span onclick=cerrar('ej1c') class="w3-closebtn">&times;</span>
+								<h2>Esto es el Header</h2>
+							</header>
+							<div class="w3-container">
+								<p>Aqui va el contenido...</p>
+								<p>Aqui va el contenido....</p>
+							</div>
+							<footer class="w3-container w3-blue">
+								<p>Esto es el Footer</p>
+							</footer>
+						</div>
+					</div>
+					
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+							<div class="w3-code htmlHigh notranslate w3-small">			
+								
+								&ltbutton onclick=abrir('ej1a') class="w3-btn w3-margin-left w3-teal w3-ripple" style="width:30%">Abrir Modal 1&lt/button&gt <br>
+									&ltdiv id="ej1a" class="w3-modal"&gt <br>
+										&ltdiv class="w3-modal-content"&gt <br>
+											&ltheader class="w3-container w3-teal"&gt <br>
+												&ltspan onclick=cerrar('ej1a') class="w3-closebtn">&times;&lt/span&gt <br>
+												&lth2&gtEsto es el Header&lt/h2&gt <br>
+											&lt/header&gt <br>
+											&ltdiv class="w3-container"&gt <br>
+												&ltp>Aqui va el contenido...&lt/p&gt <br>
+												&ltp>Aqui va el contenido...&lt/p&gt <br>
+											&lt/div&gt <br>
+											&ltfooter class="w3-container w3-teal"&gt <br>
+												&ltp&gtEsto es el Footer&lt/p&gt <br>
+											&lt/footer&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+									
+									&ltbutton onclick=abrir('ej1b') class="w3-btn w3-green w3-ripple" style="width:30%"&gtAbrir Modal 2&lt/button&gt <br>
+									&ltdiv id="ej1b" class="w3-modal"&gt <br>
+										&ltdiv class="w3-modal-content"&gt <br>
+											&ltheader class="w3-container w3-green"&gt <br>
+												&ltspan onclick=cerrar('ej1b') class="w3-closebtn"&gt&times;&lt/span&gt <br>
+												&lth2>Esto es el Header&lt/h2&gt <br>
+											&lt/header&gt <br>
+											&ltdiv class="w3-container"&gt <br>
+												&ltp&gtAqui va el contenido...&lt/p&gt <br>
+												&ltp&gtAqui va el contenido...&lt/p&gt <br>
+											&lt/div&gt <br>
+											&ltfooter class="w3-container w3-green"&gt <br>
+												&ltp&gtEsto es el Footer&lt/p&gt <br>
+											&lt/footer&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+									
+									&ltbutton onclick=abrir('ej1c') class="w3-btn  w3-margin-right w3-blue w3-ripple" style="width:30%"&gtAbrir Modal 3&lt/button&gt <br>
+									&ltdiv id="ej1c" class="w3-modal"&gt <br>
+										&ltdiv class="w3-modal-content"&gt <br>
+											&ltheader class="w3-container w3-blue"&gt  <br>
+												&ltspan onclick=cerrar('ej1c') class="w3-closebtn"&gt&times;&lt/span&gt <br>
+												&lth2>Esto es el Header&lt/h2&gt <br>
+											&lt/header&gt <br>
+											&ltdiv class="w3-container"&gt <br>
+												&ltp&gtAqui va el contenido...&lt/p&gt <br>
+												&ltp&gtAqui va el contenido....&lt/p&gt <br>
+											&lt/div&gt <br>
+											&ltfooter class="w3-container w3-blue"&gt <br>
+												&ltp&gtEsto es el Footer&lt/p&gt <br>
+											&lt/footer&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								
+								
+							</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
@@ -91,33 +179,38 @@
 			<!--Esto es el segundo ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links2:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animated Accordions:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion animado" que se despliega utilizando los efectos Zoom, Top y Fading, y muestra una serie de links.</p>	
 				
-				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
+				<div class="w3-container w3-Acme" >
+					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
+						<button onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align w3-hover-blue"> Animated Accordion Zoom <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo2a" class="w3-accordion-content w3-animate-zoom">
+						  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
+						  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
 						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
+						<button onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Top <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo2b" class="w3-accordion-content w3-animate-top">
+						  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
+						  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
+						</div>
+						<button onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Fading<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo2c" class="w3-accordion-content w3-animate-fading">
+						  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
+						  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informÃ¡tico en el lado del mal</a>
 						</div>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+						<div class="w3-code htmlHigh notranslate w3-small">			
+								
+							
+							
+							
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
@@ -125,33 +218,46 @@
 			<!--Esto es el tercer ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links3:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with lists:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una lista con nombres.</p>	
 				
-				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
+				<div class="w3-container w3-Acme" >
+					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
+						<button onclick="ejemplo('ejemplo3a')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"> Personajes Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo3a" class="w3-accordion-content">
+						  <ul class="w3-ul">
+							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Pvt. Adrian Caparzo</li>
+							<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Daniel Jackson</li>
+							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Irwin Wade</li>
+						  </ul>  
 						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
+						<button onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Stargate SG-1<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo3b" class="w3-accordion-content">
+						  <ul class="w3-ul">
+							<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Samantha Carter</li>
+							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Teal'c</li>
+							<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Jack O'Neill</li>
+						  </ul>
+						</div>
+						<button onclick="ejemplo('ejemplo3c')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Siete aÃ±os en el Tibet<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo3c" class="w3-accordion-content">
+							<ul class="w3-ul">
+								<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Lhakpa Tsamchoe</li>
+								<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Peter Aufschnaiter</li>
+								<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Ngawang Jigme</li>
+							</ul>
 						</div>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+						<div class="w3-code htmlHigh notranslate w3-small">			
+						
+						
+						
+
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
@@ -159,33 +265,49 @@
 			<!--Esto es el cuarto ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links4:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Aqui tiene que venir una una explicacion del ejemplo ¿?¿?¿?¿?¿¿?¿?¿¿..................................?¿?¿?¿?¿?¿?¿?¿??¿¿?¿¿?¿¿?¿?¿?¿??¿?¿?</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion Content:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra contenido con infomacion diversa.</p>	
 				
 				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" >
-						<button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">Accordion 1</button>
-						<div id="Demo1" class="w3-accordion-content ">
-						  <a href="#">Link 1</a>
-						  <a href="#">Link 2</a>
-						  <a href="#">Link 3</a>
+					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
+						<button onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"> Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo4a" class="w3-accordion-content">
+							<h5 class="w3-text-shadow">Sinopsis:</h5>
+							<p>Segunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en NormandÃ­a, a un grupo de soldados americanos se le encomienda una 
+							peligrosa misiÃ³n: poner a salvo al soldado James Ryan. Los hombres de la patrulla
+							del capitÃ¡n John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra. 
+							Lo Ãºnico que se sabe del soldado Ryan es que se lanzÃ³ con su escuadrÃ³n de paracaidistas detrÃ¡s de las lÃ­neas enemigas. (FILMAFFINITY)</p>
 						</div>
-						<button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align"> Accordion</button>
-						<div id="Demo2" class="w3-accordion-content">
-						  <a class="w3-padding-16" href="#">Link 1</a>
-						  <a class="w3-padding-16" href="#">Link 2</a>
-						  <a class="w3-padding-16" href="#">Link 3</a>
+						<button onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Stargate SG-1<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo4b" class="w3-accordion-content">
+						  <h5 class="w3-text-shadow">Sinopsis:</h5>
+							<p>Esta es la lista de episodios de Stargate SG-1, serie de televisiÃ³n de ciencia ficciÃ³n militar producida en CanadÃ¡ y Estados Unidos y creada por Brad Wright y Jonathan Glassner. 
+							La serie continÃºa la historia de la pelÃ­cula de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueÃ³logo Daniel Jackson 
+							empleaban un antiguo aparato alienÃ­gena llamado Â«StargateÂ» para viajar a un planeta en el que un extraterrestre llamado Ra oprimÃ­a a los humanos que allÃ­ vivÃ­an haciÃ©ndose pasar 
+							por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un aÃ±o despuÃ©s de los sucesos de la pelÃ­cula,1 muestra que Ra no fue el Ãºnico alienÃ­gena que utilizÃ³ 
+							los Stargates para transportar esclavos humanos a muchos planetas durante miles de aÃ±os.</p>
+						</div>
+						<button onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Siete aÃ±os en el Tibet<i class="fa fa-caret-down"></i></button>
+						<div id="ejemplo4c" class="w3-accordion-content">
+							<h5 class="w3-text-shadow">Sinopsis:</h5>
+							<p>Basada en un hecho real, Siete AÃ±os en el TÃ­bet narra la aventura de Heinrich Harrer, un alpinista austrÃ­aco que en otoÃ±o de 1939 iniciÃ³ una expediciÃ³n para escalar
+							el Everest. Su intento se truncÃ³ por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentraciÃ³n inglÃ©s en la India junto con 
+							su compaÃ±ero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del TÃ­bet, un lugar
+							prohibido para los extranjeros. AllÃ­ Harrer entablÃ³ una profunda amistad con el actual Dalai Lama, un niÃ±o por entonces, y se contagiÃ³ de su 
+							espiritualidad.</p>
 						</div>
 					</div>
 					
-					<div class="w3-code cssHigh notranslate  w3-margin-left w3-margin-right w3-tiny">
-						body {<br>
-					      background-color: #d0e4fe;<br>}<br>h1 {<br>
-					      color: orange;<br>
-					      text-align: center;<br>}<br>p {<br>
-					      font-family: "Times New Roman";<br>
-					      font-size: 20px;<br>}
-					 </div>
+					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+						<div class="w3-code htmlHigh notranslate w3-small">			
+							
+							
+							
+							
+						
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-------------------------------------------------------->
@@ -199,8 +321,9 @@
 			</div>		
 		</footer>
 	</body>
+	<script src="http://www.w3schools.com/lib/w3codecolor.js"></script>
+	<script>
+		w3CodeColor();
+	</script>
 
 </html>
-
-
-
