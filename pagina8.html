@@ -179,37 +179,121 @@
 			<!--Esto es el segundo ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animated Accordions:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion animado" que se despliega utilizando los efectos Zoom, Top y Fading, y muestra una serie de links.</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animated Modals:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small"> ¿?¿?¿?¿?¿?¿?¿?¿¿?¿?¿¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿¿?</p>	
 				
-				<div class="w3-container w3-Acme" >
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
-						<button onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align w3-hover-blue"> Animated Accordion Zoom <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo2a" class="w3-accordion-content w3-animate-zoom">
-						  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
-						  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
+				<div class="w3-container w3-Acme w3-row-padding" >
+					
+					<button onclick=abrir('ej2a') class="w3-btn w3-margin-left w3-teal w3-ripple" style="width:30%">W3-animate-zoom</button>
+					<div id="ej2a" class="w3-modal w3-animate-zoom ">
+						<div class="w3-modal-content ">
+							<header class="w3-container w3-teal"> 
+								<span onclick=cerrar('ej2a') class="w3-closebtn">&times;</span>
+								<h2>W3-animate-zoom</h2>
+							</header>
+							<div class="w3-container">
+								<p>Con este efecto, parece que salga del interior de la pantalla...</p>
+								<p>Con este efecto, parece que salga del interior de la pantalla...</p>
+							</div>
+							<footer class="w3-container w3-teal">
+								<p>W3-animate-zoom</p>
+							</footer>
 						</div>
-						<button onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Top <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo2b" class="w3-accordion-content w3-animate-top">
-						  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
-						  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
+					</div>
+					
+					<button onclick=abrir('ej2b') class="w3-btn w3-green w3-ripple" style="width:30%">W3-animate-opacity</button>
+					<div id="ej2b" class="w3-modal w3-animate-opacity">
+						<div class="w3-modal-content">
+							<header class="w3-container w3-green"> 
+								<span onclick=cerrar('ej2b') class="w3-closebtn">&times;</span>
+								<h2>W3-animate-opacity</h2>
+							</header>
+							<div class="w3-container">
+								<p>Con este efecto, pasa de ser trasnparente a opaco.</p>
+								<p>Con este efecto, pasa de ser trasnparente a opaco.</p>
+							</div>
+							<footer class="w3-container w3-green">
+								<p>W3-animate-opacity</p>
+							</footer>
 						</div>
-						<button onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Fading<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo2c" class="w3-accordion-content w3-animate-fading">
-						  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
-						  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informÃ¡tico en el lado del mal</a>
+					</div>
+					
+					<button onclick=abrir('ej2c') class="w3-btn  w3-margin-right w3-blue w3-ripple" style="width:30%">w3-animate-top</button>
+					<div id="ej2c" class="w3-modal">
+						<div class="w3-modal-content w3-animate-top">
+							<header class="w3-container w3-blue"> 
+								<span onclick=cerrar('ej2c') class="w3-closebtn">&times;</span>
+								<h2>w3-animate-top</h2>
+							</header>
+							<div class="w3-container">
+								<p>Con este efecto, aparece desde la parte superior de la pantalla</p>
+								<p>Con este efecto, aparece desde la parte superior de la pantalla</p>
+							</div>
+							<footer class="w3-container w3-blue">
+								<p>w3-animate-top</p>
+							</footer>
 						</div>
 					</div>
 					
 					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
 						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-						<div class="w3-code htmlHigh notranslate w3-small">			
+							<div class="w3-code htmlHigh notranslate w3-small">			
 								
-							
-							
-							
-							
-						</div>
+								&ltbutton onclick=abrir('ej2a') class="w3-btn w3-margin-left w3-teal w3-ripple" style="width:30%"&gtW3-animate-zoom&lt/button&gt <br>
+									&ltdiv id="ej2a" class="w3-modal w3-animate-zoom "&gt <br>
+										&ltdiv class="w3-modal-content "&gt <br>
+											&ltheader class="w3-container w3-teal"&gt  <br>
+												&ltspan onclick=cerrar('ej2a') class="w3-closebtn"&gt&times;&lt/span&gt <br>
+												&lth2&gtW3-animate-zoom&lt/h2&gt <br>
+											&lt/header&gt <br>
+											&ltdiv class="w3-container"&gt <br>
+												&ltp&gtCon este efecto, parece que salga del interior de la pantalla...&lt/p&gt <br>
+												&ltp&gtCon este efecto, parece que salga del interior de la pantalla...&lt/p&gt <br>
+											&lt/div&gt <br>
+											&ltfooter class="w3-container w3-teal"&gt <br>
+												&ltp>W3-animate-zoom&lt/p&gt <br>
+											&lt/footer&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+									
+									&ltbutton onclick=abrir('ej2b') class="w3-btn w3-green w3-ripple" style="width:30%"&gtW3-animate-opacity&lt/button&gt <br>
+									&ltdiv id="ej2b" class="w3-modal w3-animate-opacity"&gt <br>
+										&ltdiv class="w3-modal-content"&gt <br>
+											&ltheader class="w3-container w3-green"&gt  <br>
+												&ltspan onclick=cerrar('ej2b') class="w3-closebtn"&gt&times;&lt/span&gt <br>
+												&lth2>W3-animate-opacity&lt/h2&gt <br>
+											&lt/header&gt <br>
+											&ltdiv class="w3-container"&gt <br>
+												&ltp&gtCon este efecto, pasa de ser trasnparente a opaco.&lt/p&gt <br>
+												&ltp&gtCon este efecto, pasa de ser trasnparente a opaco.&lt/p&gt <br>
+											&lt/div&gt <br>
+											&ltfooter class="w3-container w3-green"&gt <br>
+												&ltp&gtW3-animate-opacity&lt/p&gt <br>
+											&lt/footer&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+									
+									&ltbutton onclick=abrir('ej2c') class="w3-btn  w3-margin-right w3-blue w3-ripple" style="width:30%"&gtw3-animate-top&lt/button&gt <br>
+									&ltdiv id="ej2c" class="w3-modal"&gt <br>
+										&ltdiv class="w3-modal-content w3-animate-top"&gt <br>
+											&ltheader class="w3-container w3-blue"&gt <br>
+												&ltspan onclick=cerrar('ej2c') class="w3-closebtn"&gt&times;&lt/span&gt <br>
+												&lth2&gtw3-animate-top&lt/h2&gt <br>
+											&lt/header&gt <br>
+											&ltdiv class="w3-container"&gt <br>
+												&ltp&gtCon este efecto, aparece desde la parte superior de la pantalla&lt/p&gt <br>
+												&ltp&gtCon este efecto, aparece desde la parte superior de la pantalla&lt/p&gt <br>
+											&lt/div&gt <br>
+											&ltfooter class="w3-container w3-blue"&gt <br>
+												&ltp&gtw3-animate-top&lt/p&gt <br>
+											&lt/footer&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								
+								
+								
+								
+							</div>
 					</div>
 				</div>
 			</div>
