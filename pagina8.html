@@ -180,7 +180,8 @@
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
 				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animated Modals:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small"> ¿?¿?¿?¿?¿?¿?¿?¿¿?¿?¿¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿?¿¿?</p>	
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small"> Este ejemplo representa un Modal, que al abrir-se, muestra informacion estructurada en un 
+				header, contenido y un footer. En este ejemplo se han utilizado los efectos animados 'Zoom, Opacity y Top' que se muestran al ser desplegado el Modal.</p>	
 				
 				<div class="w3-container w3-Acme w3-row-padding" >
 					
@@ -290,9 +291,6 @@
 										&lt/div&gt <br>
 									&lt/div&gt <br>
 								
-								
-								
-								
 							</div>
 					</div>
 				</div>
@@ -302,45 +300,83 @@
 			<!--Esto es el tercer ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with lists:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una lista con nombres.</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Modal with Alerts:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un Modal, que al abrir-se, muestra una alerta determinada 'Danger, Warningy Success.
+					Los mensajes de alerta suelen utilizar-se a menudo junto a un Modal.</p>	
 				
-				<div class="w3-container w3-Acme" >
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
-						<button onclick="ejemplo('ejemplo3a')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"> Personajes Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo3a" class="w3-accordion-content">
-						  <ul class="w3-ul">
-							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Pvt. Adrian Caparzo</li>
-							<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Daniel Jackson</li>
-							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Irwin Wade</li>
-						  </ul>  
+				<div class="w3-container w3-Acme w3-row-padding" >
+					
+					<button onclick=abrir('ej3a') class="w3-btn w3-margin-left w3-red w3-ripple" style="width:30%">Danger Modal </button>
+					<div id="ej3a" class="w3-modal w3-animate-zoom ">
+						<div class="w3-modal-content ">
+							<div class="w3-panel w3-red  w3-card-16" >
+								<span onclick=cerrar('ej3a') class="w3-closebtn">&times;</span>							
+								<h5>Danger!</h5>
+								<p>Red often indicates a dangerous or negative situation.</p>
+							</div>
 						</div>
-						<button onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Stargate SG-1<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo3b" class="w3-accordion-content">
-						  <ul class="w3-ul">
-							<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Samantha Carter</li>
-							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Teal'c</li>
-							<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Jack O'Neill</li>
-						  </ul>
+					</div>
+					
+					<button onclick=abrir('ej3b') class="w3-btn w3-yellow w3-ripple" style="width:30%">Warning Modal</button>
+					<div id="ej3b" class="w3-modal w3-animate-opacity">
+						<div class="w3-modal-content ">
+							<div class="w3-panel w3-yellow  w3-card-16">
+								<span onclick=cerrar('ej3b') class="w3-closebtn">&times;</span>							
+								<h5>Warning!</h5>
+								<p>Yellow or orange often indicates a warning that might need attention.</p>
+							</div>
 						</div>
-						<button onclick="ejemplo('ejemplo3c')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Siete aÃ±os en el Tibet<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo3c" class="w3-accordion-content">
-							<ul class="w3-ul">
-								<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Lhakpa Tsamchoe</li>
-								<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Peter Aufschnaiter</li>
-								<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Ngawang Jigme</li>
-							</ul>
+					</div>
+					
+					<button onclick=abrir('ej3c') class="w3-btn w3-green w3-ripple" style="width:30%">Success Modal</button>
+					<div id="ej3c" class="w3-modal w3-animate-opacity">
+						<div class="w3-modal-content ">
+							<div class="w3-panel w3-green  w3-card-16">
+								<span onclick=cerrar('ej3c') class="w3-closebtn">&times;</span>							
+								<h5>Success!</h5>
+								<p>Green often indicates something successful or positive.</p>
+							</div>
 						</div>
 					</div>
 					
 					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
 						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-						<div class="w3-code htmlHigh notranslate w3-small">			
-						
-						
-						
-
-						</div>
+							<div class="w3-code htmlHigh notranslate w3-small">			
+								
+								&ltbutton onclick=abrir('ej3a') class="w3-btn w3-margin-left w3-teal w3-ripple" style="width:30%"&gtDanger Modal &lt/button&gt <br>
+								&ltdiv id="ej3a" class="w3-modal w3-animate-zoom "&gt <br>
+									&ltdiv class="w3-modal-content "&gt <br>
+										&ltdiv class="w3-panel w3-red  w3-card-16" &gt <br>
+											&ltspan onclick=cerrar('ej3a') class="w3-closebtn"&gt&times;&lt/span&gt		 <br>				
+											&lth5>Danger!&lt/h5&gt <br>
+											&ltp>Red often indicates a dangerous or negative situation.&lt/p&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt <br>
+								
+								&ltbutton onclick=abrir('ej3b') class="w3-btn w3-green w3-ripple" style="width:30%"&gtWarning Modal&lt/button&gt <br>
+								&ltdiv id="ej3b" class="w3-modal w3-animate-opacity"&gt <br>
+									&ltdiv class="w3-modal-content "&gt <br>
+										&ltdiv class="w3-panel w3-yellow  w3-card-16"&gt <br>
+											&ltspan onclick=cerrar('ej3b') class="w3-closebtn"&gt&times;&lt/span&gt		 <br>					
+											&lth5>Warning!&lt/h5&gt <br>
+											&ltp&gtYellow or orange often indicates a warning that might need attention.&lt/p&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt <br>
+								
+								&ltbutton onclick=abrir('ej3c') class="w3-btn w3-blue w3-ripple" style="width:30%"&gtSuccess Modal&lt/button&gt <br>
+								&ltdiv id="ej3c" class="w3-modal w3-animate-opacity"&gt <br>
+									&ltdiv class="w3-modal-content "&gt <br>
+										&ltdiv class="w3-panel w3-green  w3-card-16"&gt <br>
+											&ltspan onclick=cerrar('ej3c') class="w3-closebtn"&gt&times;&lt/span&gt		 <br>					
+											&lth5>Success!&lt/h5&gt <br>
+											&ltp&gtGreen often indicates something successful or positive.&lt/p&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt	 <br>
+								
+							</div>
 					</div>
 				</div>
 			</div>
