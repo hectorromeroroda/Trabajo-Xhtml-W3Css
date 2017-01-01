@@ -385,48 +385,95 @@
 			<!--Esto es el cuarto ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion Content:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra contenido con infomacion diversa.</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Modal Image:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un Modal, que al abrir-se, muestra una imagen. Estas imagenes tienen varios efectos
+				aplicados sobre ellas, como opacidad, degradado etc.</p>	
 				
-				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
-						<button onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"> Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo4a" class="w3-accordion-content">
-							<h5 class="w3-text-shadow">Sinopsis:</h5>
-							<p>Segunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en Normandía, a un grupo de soldados americanos se le encomienda una 
-							peligrosa misión: poner a salvo al soldado James Ryan. Los hombres de la patrulla
-							del capitán John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra. 
-							Lo único que se sabe del soldado Ryan es que se lanzó con su escuadrón de paracaidistas detrás de las líneas enemigas. (FILMAFFINITY)</p>
+				<div class="w3-container w3-Acme w3-row-padding" >
+					
+					<button onclick=abrir('ej4a') class="w3-btn w3-margin-left w3-red w3-ripple" style="width:30%">Valle de Pineta </button>
+					<div id="ej4a" class="w3-modal w3-animate-zoom ">
+						<span onclick=cerrar('ej4a') class="w3-closebtn w3-red w3-hover-blue w3-container w3-padding-16 w3-display-topright">&times;</span>
+						<div class="w3-modal-content w3-animate-zoom">
+							<div class="w3-display-container w3-text-white">
+								<img src="imagenes/pineta.jpg" class= "w3-border w3-hover-opacity" style="width:100%">
+								<div class="w3-display-bottomleft w3-container">
+									<p>Valle de Pineta</p>
+								</div>
+							</div>
 						</div>
-						<button onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Stargate SG-1<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo4b" class="w3-accordion-content">
-						  <h5 class="w3-text-shadow">Sinopsis:</h5>
-							<p>Esta es la lista de episodios de Stargate SG-1, serie de televisión de ciencia ficción militar producida en Canadá y Estados Unidos y creada por Brad Wright y Jonathan Glassner. 
-							La serie continúa la historia de la película de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueólogo Daniel Jackson 
-							empleaban un antiguo aparato alienígena llamado «Stargate» para viajar a un planeta en el que un extraterrestre llamado Ra oprimía a los humanos que allí vivían haciéndose pasar 
-							por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un año después de los sucesos de la película,1 muestra que Ra no fue el único alienígena que utilizó 
-							los Stargates para transportar esclavos humanos a muchos planetas durante miles de años.</p>
+					</div>
+					
+					<button onclick=abrir('ej4b') class="w3-btn w3-yellow w3-ripple" style="width:30%">Valle de Ordesa</button>
+					<div id="ej4b" class="w3-modal w3-animate-opacity">
+						<span onclick=cerrar('ej4b') class="w3-closebtn w3-red w3-hover-blue w3-container w3-padding-16 w3-display-topright">&times;</span>
+						<div class="w3-modal-content w3-animate-zoom w3-circle">
+							<div class="w3-display-container w3-text-white">
+								<img src="imagenes/ordesa.jpg" class= "w3-border w3-hover-grayscale w3-circle" style="width:100%">
+								<div class="w3-display-bottommiddle w3-container">
+									<p>Valle de Ordesa</p>
+								</div>
+							</div>
 						</div>
-						<button onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Siete años en el Tibet<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo4c" class="w3-accordion-content">
-							<h5 class="w3-text-shadow">Sinopsis:</h5>
-							<p>Basada en un hecho real, Siete Años en el Tíbet narra la aventura de Heinrich Harrer, un alpinista austríaco que en otoño de 1939 inició una expedición para escalar
-							el Everest. Su intento se truncó por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentración inglés en la India junto con 
-							su compañero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del Tíbet, un lugar
-							prohibido para los extranjeros. Allí Harrer entabló una profunda amistad con el actual Dalai Lama, un niño por entonces, y se contagió de su 
-							espiritualidad.</p>
+					</div>
+					
+					<button onclick=abrir('ej4c') class="w3-btn w3-green w3-ripple" style="width:30%">Aig�estortes</button>
+					<div id="ej4c" class="w3-modal w3-animate-opacity">
+						<span onclick=cerrar('ej4c') class="w3-closebtn w3-red w3-hover-blue w3-container w3-padding-16 w3-display-topright">&times;</span>
+						<<div class="w3-modal-content w3-animate-zoom w3-round">
+							<div class="w3-display-container w3-text-white">
+								<img src="imagenes/aigues.jpg" class= "w3-border w3-hover-sepia w3-round " style="width:100%">
+								<div class="w3-display-bottomright w3-container">
+									<p>Aig�estortes</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					
 					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
 						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-						<div class="w3-code htmlHigh notranslate w3-small">			
+							<div class="w3-code htmlHigh notranslate w3-small">			
+								
+								&ltbutton onclick=abrir('ej4a') class="w3-btn w3-margin-left w3-red w3-ripple" style="width:30%"&gtValle de Pineta &lt/button&gt <br>
+								&ltdiv id="ej4a" class="w3-modal w3-animate-zoom "&gt <br>
+									&ltspan onclick=cerrar('ej4a') class="w3-closebtn w3-red w3-hover-blue w3-container w3-padding-16 w3-display-topright"&gt&times;&lt/span&gt <br>
+									&ltdiv class="w3-modal-content w3-animate-zoom"&gt <br>
+										&ltdiv class="w3-display-container w3-text-white"&gt <br>
+											&ltimg src="imagenes/pineta.jpg" class= "w3-border w3-hover-opacity" style="width:100%"&gt <br>
+											&ltdiv class="w3-display-bottomleft w3-container"&gt <br>
+												&ltp&gtValle de Pineta&lt/p&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt <br>
+								
+								&ltbutton onclick=abrir('ej4b') class="w3-btn w3-yellow w3-ripple" style="width:30%"&gtValle de Ordesa&lt/button&gt <br>
+								&ltdiv id="ej4b" class="w3-modal w3-animate-opacity"&gt <br>
+									&ltspan onclick=cerrar('ej4b') class="w3-closebtn w3-red w3-hover-blue w3-container w3-padding-16 w3-display-topright"&gt&times;&lt/span&gt <br>
+									&ltdiv class="w3-modal-content w3-animate-zoom w3-circle"&gt <br>
+										&ltdiv class="w3-display-container w3-text-white"&gt <br>
+											&ltimg src="imagenes/ordesa.jpg" class= "w3-border w3-hover-grayscale w3-circle" style="width:100%"&gt <br>
+											&ltdiv class="w3-display-bottommiddle w3-container"&gt <br>
+												&ltp&gtValle de Ordesa&lt/p&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt <br>
+								
+								&ltbutton onclick=abrir('ej4c') class="w3-btn w3-green w3-ripple" style="width:30%"&gtAig�estortes&lt/button&gt <br>
+								&ltdiv id="ej4c" class="w3-modal w3-animate-opacity"&gt <br>
+									&ltspan onclick=cerrar('ej4c') class="w3-closebtn w3-red w3-hover-blue w3-container w3-padding-16 w3-display-topright"&gt&times;&lt/span&gt <br>
+									&ltdiv class="w3-modal-content w3-animate-zoom w3-round"&gt <br>
+										&ltdiv class="w3-display-container w3-text-white"&gt <br>
+											&ltimg src="imagenes/aigues.jpg" class= "w3-border w3-hover-sepia w3-round " style="width:100%"&gt <br>
+											&ltdiv class="w3-display-bottomright w3-container"&gt <br>
+												&ltp&gtAig�estortes&lt/p&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt <br>
 							
-							
-							
-							
-						
-						</div>
+							</div>
 					</div>
 				</div>
 			</div>
