@@ -119,7 +119,7 @@
 				
 				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Validating Labels:</h5>
 				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small"> Este ejemplo representa un formulario, en el cual nos piden introducir 
-				nuestro nombre, apellidos y correo electronico, valida el contenido introducido si concuerda con los valores esperados. Rojo=no valido, Verde= valido.</p>	
+				nuestro nombre, apellidos y correo electronico, valida el contenido introducido si concuerda con los formatos esperados. Rojo=no valido, Verde= valido.</p>	
 				
 				<div class="w3-container w3-Acme w3-small " >
 					<div class="w3-card-4 w3-margin-left w3-margin-right">
@@ -176,81 +176,55 @@
 			<!--Esto es el tercer ejemplo-->	
 			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Modal with Alerts:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un Modal, que al abrir-se, muestra una alerta determinada 'Danger, Warningy Success.
-					Los mensajes de alerta suelen utilizar-se a menudo junto a un Modal.</p>	
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Hoverable and Animated inputs:</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo ¿?¿?¿¿?¿?¿?¿??¿?¿?¿?¿?¿?¿¿?¿¿?¿??¿¿?.</p>	
 				
-				<div class="w3-container w3-Acme w3-row-padding" >
-					
-					<button onclick=abrir('ej3a') class="w3-btn w3-margin-left w3-red w3-ripple" style="width:30%">Danger Modal </button>
-					<div id="ej3a" class="w3-modal w3-animate-zoom ">
-						<div class="w3-modal-content ">
-							<div class="w3-panel w3-red  w3-card-16" >
-								<span onclick=cerrar('ej3a') class="w3-closebtn">&times;</span>							
-								<h5>Danger!</h5>
-								<p>Red often indicates a dangerous or negative situation.</p>
-							</div>
+				<div class="w3-container w3-Acme w3-small" >
+					<div class="w3-card-4 w3-margin-left w3-margin-right">
+						<div class="w3-container w3-blue">
+						  <h4>Hoverable and Animated inputs</h4>
 						</div>
+
+						<form class="w3-container">
+						  <p><input class="w3-input w3-hover-green w3-animate-input" style= "width:50%" type="text" name="nombre" required>
+						  <label class="w3-bold w3-validate w3-label">Nombre:</label></p>
+						  <p>     
+						  <input class="w3-input w3-hover-red w3-animate-input" style= "width:35%" type="text" name="apellidos" required>
+						  <label class="w3-bold w3-validate w3-label">Apellidos:</label></p>
+						  <input class="w3-input w3-hover-yellow w3-animate-input" style= "width:50%" type="email"name="correo" required>
+						  <label class="w3-bold w3-validate w3-label">Correo electronico:</label></p>
+						  <p>      
+						  <button onclick=guardar() class="w3-btn w3-blue w3-border w3-wide">Guardar</button>
+						  <button onclick=borrar() class="w3-btn w3-blue w3-border w3-wide w3-right w3-text-center">Eliminar</button></p>
+						</form>
+						</form>
 					</div>
 					
-					<button onclick=abrir('ej3b') class="w3-btn w3-yellow w3-ripple" style="width:30%">Warning Modal</button>
-					<div id="ej3b" class="w3-modal w3-animate-opacity">
-						<div class="w3-modal-content ">
-							<div class="w3-panel w3-yellow  w3-card-16">
-								<span onclick=cerrar('ej3b') class="w3-closebtn">&times;</span>							
-								<h5>Warning!</h5>
-								<p>Yellow or orange often indicates a warning that might need attention.</p>
-							</div>
-						</div>
-					</div>
-					
-					<button onclick=abrir('ej3c') class="w3-btn w3-green w3-ripple" style="width:30%">Success Modal</button>
-					<div id="ej3c" class="w3-modal w3-animate-opacity">
-						<div class="w3-modal-content ">
-							<div class="w3-panel w3-green  w3-card-16">
-								<span onclick=cerrar('ej3c') class="w3-closebtn">&times;</span>							
-								<h5>Success!</h5>
-								<p>Green often indicates something successful or positive.</p>
-							</div>
-						</div>
-					</div>
 					
 					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
 						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
 							<div class="w3-code htmlHigh notranslate w3-small">			
 								
-								&ltbutton onclick=abrir('ej3a') class="w3-btn w3-margin-left w3-teal w3-ripple" style="width:30%"&gtDanger Modal &lt/button&gt <br>
-								&ltdiv id="ej3a" class="w3-modal w3-animate-zoom "&gt <br>
-									&ltdiv class="w3-modal-content "&gt <br>
-										&ltdiv class="w3-panel w3-red  w3-card-16" &gt <br>
-											&ltspan onclick=cerrar('ej3a') class="w3-closebtn"&gt&times;&lt/span&gt		 <br>				
-											&lth5>Danger!&lt/h5&gt <br>
-											&ltp>Red often indicates a dangerous or negative situation.&lt/p&gt <br>
-										&lt/div&gt <br>
+								&ltdiv class="w3-card-4 w3-margin-left w3-margin-right"&gt <br>
+									&ltdiv class="w3-container w3-blue"&gt <br>
+									  &lth4>Hoverable and Animated inputs&lt/h4&gt <br>
 									&lt/div&gt <br>
+
+									&ltform class="w3-container"&gt <br>
+									  &ltp&gt&ltinput class="w3-input w3-hover-green w3-animate-input" style= "width:50%" type="text" name="nombre" required&gt <br>
+									  &ltlabel class="w3-bold w3-validate w3-label"&gtNombre:&lt/label&gt&lt/p&gt <br>
+									  &ltp&gt      <br>
+									  &ltinput class="w3-input w3-hover-red w3-animate-input" style= "width:35%" type="text" name="apellidos" required&gt <br>
+									  &ltlabel class="w3-bold w3-validate w3-label">Apellidos:&lt/label&gt&lt/p&gt <br>
+									  &ltinput class="w3-input w3-hover-yellow w3-animate-input" style= "width:50%" type="email"name="correo" required&gt <br>
+									  &ltlabel class="w3-bold w3-validate w3-label">Correo electronico:&lt/label&gt&lt/p&gt <br>
+									  &ltp&gt       <br>
+									  &ltbutton onclick=guardar() class="w3-btn w3-blue w3-border w3-wide">Guardar&lt/button&gt <br>
+									  &ltbutton onclick=borrar() class="w3-btn w3-blue w3-border w3-wide w3-right w3-text-center"&gtEliminar&lt/button&gt&lt/p&gt <br>
+									&lt/form&gt <br>
+									&lt/form&gt <br>
 								&lt/div&gt <br>
 								
-								&ltbutton onclick=abrir('ej3b') class="w3-btn w3-green w3-ripple" style="width:30%"&gtWarning Modal&lt/button&gt <br>
-								&ltdiv id="ej3b" class="w3-modal w3-animate-opacity"&gt <br>
-									&ltdiv class="w3-modal-content "&gt <br>
-										&ltdiv class="w3-panel w3-yellow  w3-card-16"&gt <br>
-											&ltspan onclick=cerrar('ej3b') class="w3-closebtn"&gt&times;&lt/span&gt		 <br>					
-											&lth5>Warning!&lt/h5&gt <br>
-											&ltp&gtYellow or orange often indicates a warning that might need attention.&lt/p&gt <br>
-										&lt/div&gt <br>
-									&lt/div&gt <br>
-								&lt/div&gt <br>
-								
-								&ltbutton onclick=abrir('ej3c') class="w3-btn w3-blue w3-ripple" style="width:30%"&gtSuccess Modal&lt/button&gt <br>
-								&ltdiv id="ej3c" class="w3-modal w3-animate-opacity"&gt <br>
-									&ltdiv class="w3-modal-content "&gt <br>
-										&ltdiv class="w3-panel w3-green  w3-card-16"&gt <br>
-											&ltspan onclick=cerrar('ej3c') class="w3-closebtn"&gt&times;&lt/span&gt		 <br>					
-											&lth5>Success!&lt/h5&gt <br>
-											&ltp&gtGreen often indicates something successful or positive.&lt/p&gt <br>
-										&lt/div&gt <br>
-									&lt/div&gt <br>
-								&lt/div&gt	 <br>
 								
 							</div>
 					</div>
