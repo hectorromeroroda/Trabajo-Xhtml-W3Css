@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>E112 PORTAL WEB DEMO-TUTORIAL FRAMEWORK</title>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/w3.css" media="screen" />	
+		<link href="https://fonts.googleapis.com/css?family=Acme|Boogaloo" rel="stylesheet"/>	
+		
+	<style type="text/css">
+			.w3-Acme{
+			font-family: 'Acme', sans-serif;		
+			}
+			.w3-Boogaloo{
+			font-family: 'Boogaloo', cursive;		
+			}
+	</style>
+	</head>
+	
+	<body class="w3-pale-green">
+	<!--Esto es la barra de navegacion de la izquierda-->
+		<nav class="w3-sidenav w3-light-grey w3-padding-large w3-border w3-Acme w3-third" style="width:20%">
+			<h1 class= "w3-left-align w3-text-shadow w3-Acme"> Componentes</h1>
+			<img src="imagenes/1.jpg" alt="W3Schools" style="width:100%"/>
+			<a class="w3-blue w3-hover-green w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="Index.html">Pagina Inicio</a>
+			<a class="w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="pagina1.html">W3.CSS Lists</a>
+			<a class="w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="pagina2.html">W3.CSS Tags (Labels and Signs)</a>
+			<a class="w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="pagina3.html">W3.CSS Effects</a>
+			<a class="w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="pagina4.html">W3.CSS Slideshow</a>
+			<a class="w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="pagina5.html">W3.CSS Navigation Bars</a>
+			<a class="w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="pagina6.html">W3.CSS Accordions</a>
+			<a class="w3-padding-large  w3-border-bottom w3-hover-shadow w3-round" href="pagina7.html">W3.CSS Alerts</a>
+			<a class="w3-padding-large  w3-border-bottom w3-hover-shadow w3-round" href="pagina8.html">W3.CSS Modal</a>
+			<a class="w3-padding-large  w3-border-bottom w3-hover-shadow w3-round" href="pagina9.html">W3.CSS Input</a>
+			<a class="w3-padding-large w3-border-bottom w3-hover-shadow w3-round" href="pagina10.html">W3.CSS Cards</a>
+		</nav>
+		
+	<!--Esto es la cabecera-->	
+		<header>
+			<div class="w3-container w3-grey w3-right w3-twothird" style="width:80%">
+				<h1 class="w3-wide w3-text-shadow w3-xxlarge w3-center w3-Boogaloo">E112 PORTAL WEB DEMO-TUTORIAL FRAMEWORK W3.CSS</h1>
+			</div>
+		</header>
+		
+	<!--Esto es la zona de la presentacion del proyecto-->	
+		<div class="w3-container w3-pale-green w3-bottombar w3-border-green w3-border w3-leftbar w3-right w3-Acme  w3-margin-bottom w3-twothird" style="width:80%">
+			<h2 class="w3-wide w3-text-shadow  w3-Acme">Slideshow</h2>
+			<p>Con los slideshows obtenemos una galeria la cual va variando de imágenes.</p>	
+		</div>
+		
+		<!--Esto es la zona de los ejemplos-->	
+		<div class="w3-container w3-Acme">		
+			
+			<!--Esto es el segundo ejemplo-->	
+			<div class="w3-card-12 w3-right w3-margin-right w3-margin-left w3-margin-bottom w3-light-grey w3-border" style="width:35%">
+				
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Slideshow automatico</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small"> Cada dos segundos cambia de imagen, ahora lo discutiremos mas en profundidad.</p>	
+				
+				<div class="w3-content w3-display-container">
+					<img class="mySlides2" src="imagenes/f1.jpg" style="width:100%">
+					<img class="mySlides2" src="imagenes/f2.jpg" style="width:100%">
+					<img class="mySlides2" src="imagenes/f3.jpg" style="width:100%">
+					<img class="mySlides2" src="imagenes/f4.jpg" style="width:100%">
+				</div>
+				
+				<script>
+					var slideIndex = 0;
+					carousel();
+
+					function carousel() 
+					{
+						var i;
+						var x = document.getElementsByClassName("mySlides2");
+						for (i = 0; i < x.length; i++) 
+						{
+						  x[i].style.display = "none";
+						}
+						slideIndex++;
+						if (slideIndex > x.length) {slideIndex = 1}
+						x[slideIndex-1].style.display = "block";
+						setTimeout(carousel, 2000);
+					}
+				</script>
+				
+				<p>En esta ocasión no tenemos que añadir los botones, ya que las imágenes pasan automáticamente.
+				Con el ultimo if lo que hacemos es decir el tiepo que pase hasta que el slideshow cambie de imágen. 
+				en este ejemplo está puesto a dos segundos.</p>
+				<div class="w3-code htmlHigh notranslate">
+					&lt;div class="w3-content w3-display-container"&gt;<br>
+						&lt;img class="mySlides2" src="f1.jpg" style="width:100%"&gt;<br>
+						&lt;img class="mySlides2" src="f2.jpg" style="width:100%"&gt;<br>
+						&lt;img class="mySlides2" src="f3.jpg" style="width:100%"&gt;<br>
+						&lt;img class="mySlides2" src="f4.jpg" style="width:100%"&gt;<br>
+					&lt;/div&gt;<br>
+					
+					&lt;script&gt;<br>
+						var slideIndex = 0;<br>
+						carousel();<br>
+
+						function carousel()<br> 
+						{<br>
+							var i;<br>
+							var x = document.getElementsByClassName("mySlides2");<br>
+							for (i = 0; i < x.length; i++) <br>
+							{<br>
+							  x[i].style.display = "none";<br>
+							}<br>
+							slideIndex++;<br>
+							if (slideIndex > x.length) {slideIndex = 1}<br>
+							x[slideIndex-1].style.display = "block";<br>
+							setTimeout(carousel, 2000);<br>
+						}<br>
+					&lt;/script&gt;<br>
+				</div>
+				
+			</div>
+			<!-------------------------------------------------------->
+			
+			<!--Esto es el primer ejemplo-->	
+			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
+				
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Slideshow</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Slideshow predeterminado</p>	
+				
+				
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="imagenes/tipo_caminando.jpg" style="width:100%">
+					<img class="mySlides" src="imagenes/cascada_feroe.jpg" style="width:100%">
+					<img class="mySlides" src="imagenes/feroe.jpg" style="width:100%">
+					<img class="mySlides" src="imagenes/pedrusco.jpg" style="width:100%">
+					
+					<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+					<a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+				</div>
+				
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) 
+					{
+					  showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) 
+					{
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) 
+					  {
+						 x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+				</script>
+				
+				<p>Este es el slideshow basico que obtenemos,
+				a partir de aquí lo iremos decorando para que quede mejor.
+				A continuación expondré el código.</p>
+				
+				<div class="w3-code htmlHigh notranslate">
+					&lt;div class="w3-content w3-display-container"&gt;<br>
+						&lt;img class="mySlides" src="tipo_caminando.jpg" style="width:60%"&gt;<br>
+						&lt;img class="mySlides" src="cascada_feroe.jpg" style="width:60%"&gt;<br>
+						&lt;img class="mySlides" src="feroe.jpg" style="width:60%"&gt;<br>
+						&lt;img class="mySlides" src="pedrusco.jpg" style="width:60%"&gt;<br>
+						<br>
+						&lt;a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)"&gt;&#10094;&lt;/a&gt;<br>
+						&lt;a class="w3-btn-floating w3-display-middle" onclick="plusDivs(+1)"&gt;&#10095;&lt;/a&gt;<br>
+					&lt;/div&gt;<br>
+					<br>
+					&lt;script&gt;<br>
+						var slideIndex = 1;<br>
+						showDivs(slideIndex);<br>
+						<br>
+						function plusDivs(n) {<br>
+						  showDivs(slideIndex += n);<br>
+						}<br>
+						<br>
+						function showDivs(n) {<br>
+						  var i;<br>
+						  var x = document.getElementsByClassName("mySlides");<br>
+						  if (n > x.length) {slideIndex = 1}<br>
+						  if (n < 1) {slideIndex = x.length}<br>
+						  for (i = 0; i < x.length; i++) {<br>
+							 x[i].style.display = "none";  <br>
+						  }<br>
+						  x[slideIndex-1].style.display = "block";  <br>
+						}<br>
+					&lt;/script&gt;<br>
+				</div>
+			</div>
+			<!-------------------------------------------------------->
+			
+			<!--Esto es el cuarto ejemplo-->	
+			<div class="w3-card-12 w3-right w3-margin-right w3-margin-left w3-margin-bottom w3-light-grey w3-border" style="width:35%">
+				
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animaciones</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Un sildeshow algo mas animado</p>	
+				
+				<div class="w3-content w3-display-container">
+					<img class="mySlides4 w3-animate-top" src="imagenes/f3.jpg" style="width:100%">
+					<img class="mySlides4 w3-animate-bottom" src="imagenes/f4.jpg" style="width:100%">
+					<img class="mySlides4 w3-animate-top" src="imagenes/f2.jpg" style="width:100%">
+					<img class="mySlides4 w3-animate-bottom" src="imagenes/f1.jpg" style="width:100%">
+				</div>
+				
+				<script>
+					var slideIndex2 = 0;
+					carousel2();
+
+					function carousel2() 
+					{
+						var i2;
+						var x2 = document.getElementsByClassName("mySlides4");
+						for (i2 = 0; i2 < x2.length; i2++) 
+						{
+						  x2[i2].style.display = "none";
+						}
+						slideIndex2++;
+						if (slideIndex2 > x2.length) {slideIndex2 = 1}
+						x2[slideIndex2-1].style.display = "block";
+						setTimeout(carousel2, 2000);
+					}
+				</script>
+				
+				<p>En este caso, la animación la declaramos en la clase 
+				de la etiqueta img, en este ejemplo he mostrado las animaciones:
+				"desde abajo, desde arriba y apagado gradual" si quieres profuncizar mas
+				haz click <a href="http://www.w3schools.com/w3css/w3css_slideshow.asp"> aquí</a>.
+				EL codigo es el mismo que el slideshow automatico, con la diferenca de la class.</p>
+				
+				<div class="w3-code htmlHigh notranslate">
+					&lt;div class="w3-content w3-display-container"&gt;<br>
+						&lt;img class="mySlides4 w3-animate-top" <br> src="f1.jpg" style="width:100%"&gt;<br>
+						&lt;img class="mySlides4 w3-animate-bottom" <br> src="f2.jpg" style="width:100%"&gt;<br>
+						&lt;img class="mySlides4 w3-animate-fading" <br> src="f3.jpg" style="width:100%"&gt;<br>
+						&lt;img class="mySlides4 w3-animate-top" <br> src="f4.jpg" style="width:100%"&gt;<br>
+					&lt;/div&gt;<br>
+					
+					&lt;script&gt;<br>
+						var slideIndex2 = 0;<br>
+						carousel2();<br>
+						<br>
+						function carousel2()<br> 
+						{<br>
+							var i2;<br>
+							var x2 = document.getElementsByClassName("mySlides4");<br>
+							for (i2 = 0; i2 < x2.length; i2++) <br>
+							{<br>
+							  x2[i2].style.display = "none";<br>
+							}<br>
+							slideIndex2++;<br>
+							if (slideIndex2 > x2.length) {slideIndex2 = 1}<br>
+							x2[slideIndex2-1].style.display = "block";<br>
+							setTimeout(carousel2, 2000);<br>
+						}
+					&lt;/script&gt;<br>
+				</div>
+				
+				
+			</div>
+			<!-------------------------------------------------------->
+			
+			<!--Esto es el tercer ejemplo-->	
+			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
+				
+				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Pie de foto</h5>
+				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">El pie de foto podemos utilizarlo para dar información a cerca de la imágen</p>	
+			
+			<div class="w3-content w3-display-container">
+				<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs1(-1)">&#10094;</a>
+				<a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs1(1)">&#10095;</a>
+				
+				<div class="w3-display-container mySlides3">
+				  <img src="imagenes/tipo_caminando.jpg" style="width:100%">
+					  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Islas
+					  </div>
+				</div>
+				
+				<div class="w3-display-container mySlides3">
+				  <img src="imagenes/cascada_feroe.jpg" style="width:100%">
+					  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Cascada
+					  </div>
+				</div>
+				
+				<div class="w3-display-container mySlides3">
+				  <img src="imagenes/feroe.jpg" style="width:100%">
+					  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Gran lago
+					  </div>
+				</div>
+				
+				<div class="w3-display-container mySlides3">
+				  <img src="imagenes/pedrusco.jpg" style="width:100%">
+					  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+						Pedrusco
+					  </div>
+				</div>
+			</div>
+			
+				<script>
+					var slideIndex1 = 1;
+					showDivs1(slideIndex1);
+
+					function plusDivs1(n) 
+					{
+					  showDivs1(slideIndex1 += n);
+					}
+
+					function showDivs1(n) 
+					{
+					  var i;
+					  var x = document.getElementsByClassName("mySlides3");
+					  if (n > x.length) {slideIndex1 = 1}    
+					  if (n < 1) {slideIndex1 = x.length}
+					  for (i = 0; i < x.length; i++) 
+					  {
+						 x[i].style.display = "none";  
+					  }
+					  x[slideIndex1-1].style.display = "block";  
+					}
+				</script>
+				
+				<p>Para hacer el pie de foto, deberemos de hacer dos divs
+				por imagen, uno que contenga la imagen en si, y otro que
+				se posicione en la posicion deseada y que ccontenga el texto.
+				El script variará dependiendo se queremos el slideshow con
+				botones o que sea automatico, en este caso lo he hecho
+				con botones, el script es el mismo que el anteriormente 
+				mencionado.</p>
+				
+			<div class="w3-code htmlHigh notranslate">
+				
+				&lt;div class="w3-code htmlHigh notranslate"&gt;<br>
+					&lt;div class="w3-content w3-display-container"&gt;<br>
+						&lt;a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs1(-1)">&#10094;&lt;/a&gt;<br>
+						&lt;a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs1(1)">&#10095;&lt;/a&gt;<br>
+				
+						&lt;div class="w3-display-container mySlides3"&gt;<br>
+						  &lt;img src="tipo_caminando.jpg" style="width:100%"&gt;<br>
+							  &lt;div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"&gt;<br>
+								Islas
+							  &lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						
+						&lt;div class="w3-display-container mySlides3"&gt;<br>
+						  &lt;img src="cascada_feroe.jpg" style="width:100%"&gt;<br>
+							  &lt;div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"&gt;<br>
+								Cascada
+							  &lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						
+						&lt;div class="w3-display-container mySlides3"&gt;<br>
+						  &lt;img src="feroe.jpg" style="width:100%"&gt;<br>
+							  &lt;div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"&gt;<br>
+								Gran lago
+							  &lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						
+						&lt;div class="w3-display-container mySlides3"&gt;<br>
+						  &lt;img src="pedrusco.jpg" style="width:100%"&gt;<br>
+							  &lt;div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"&gt;<br>
+								Pedrusco
+							  &lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+			
+					&lt;script&gt;<br>
+						var slideIndex1 = 1;
+						showDivs1(slideIndex1);
+
+						function plusDivs1(n) 
+						{
+						  showDivs1(slideIndex1 += n);
+						}
+
+						function showDivs1(n) 
+						{
+						  var i;
+						  var x = document.getElementsByClassName("mySlides3");
+						  if (n > x.length) {slideIndex1 = 1}    
+						  if (n < 1) {slideIndex1 = x.length}
+						  for (i = 0; i < x.length; i++) 
+						  {
+							 x[i].style.display = "none";  
+						  }
+						  x[slideIndex1-1].style.display = "block";  
+						}
+					&lt;/script&gt;<br>
+			</div>
+				
+			</div>
+			<!-------------------------------------------------------->
+			
+			
+		</div>
+		
+	<!--Esto es el pie de pagina-->	
+		<footer>
+			<div class="w3-container w3-grey w3-right w3-twothird" style="width:80%">
+				<h6 class="w3-wide w3-text-shadow w3-center w3-Boogaloo ">E112 PORTAL WEB DEMO-TUTORIAL FRAMEWORK W3.CSS</h6>
+				<p class="w3-wide w3-text-shadow w3-center w3-Boogaloo w3-margin-0">I. Saito y H. Romero</p>
+			</div>		
+		</footer>
+	</body>
+
+</html>
+
+
+
