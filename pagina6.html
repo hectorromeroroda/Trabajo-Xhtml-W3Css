@@ -57,265 +57,281 @@
 		</div>
 		
 		<!--Esto es la zona de los ejemplos-->	
-		<div class="w3-container w3-Acme">		
-			<!--Esto es el primer ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
-				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una serie de links.<br>&emsp;</p>	
-				
-				<div class="w3-container w3-Acme" >
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
-						<button onclick="ejemplo('ejemplo1a')" class="w3-btn-block w3-left-align">Accordion 1 <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo1a" class="w3-accordion-content ">
-						  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
-						  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
-						  <a class="w3-text-blue" href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat</a>
-						</div>
-						<button onclick="ejemplo('ejemplo1b')" class="w3-btn-block w3-left-align"> Accordion 2 <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo1b" class="w3-accordion-content ">
-						  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
-						  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
-						  <a class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org</a>
-						</div>
-						<button onclick="ejemplo('ejemplo1c')" class="w3-btn-block w3-left-align"> Accordion 3 <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo1c" class="w3-accordion-content ">
-						  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
-						  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informático en el lado del mal</a>
-						</div>
-					</div>
+		<div class="w3-container w3-Acme w3-right" style="width:80%">		
+			<div class="w3-container">
+				<div class="w3-row">
 					
-					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
-						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-							<div class="w3-code htmlHigh notranslate w3-small">			
-								&lt;div class="w3-container w3-Acme"&gt;<br>
-									&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" &gt <br>
-										&ltbutton onclick="ejemplo1('ejemplo1a')" class="w3-btn-block w3-left-align"&gtAccordion 1 &lti class="fa fa-caret-down"&gt&lt/i&gt &lt/button&gt <br>
-										&ltdiv id="ejemplo1a" class="w3-accordion-content "&gt <br>
-											 &lta class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat&lt/a&gt <br>
-											 &lta class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat&lt/a&gt <br>
-											 &lta class="w3-text-blue" href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat&lt/a&gt <br>
-										&lt/div&gt <br>
-										&ltbutton onclick="ejemplo1('ejemplo1b')" class="w3-btn-block w3-left-align"&gt Accordion 2 &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-										&ltdiv id="ejemplo1b" class="w3-accordion-content "&gt <br>
-											&lta class="w3-text-blue" href="https://www.feec.cat/">Feec.cat&lt/a&gt <br>
-											&lta class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es&lt/a&gt <br>
-											 &lta class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org&lt/a&gt <br>
-										&lt/div&gt <br>
-										&ltbutton onclick="ejemplo('ejemplo1c')" class="w3-btn-block w3-left-align"&gt Accordion 3 &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-										&ltdiv id="ejemplo1c" class="w3-accordion-content "&gt <br>
-										  &lta class="w3-text-blue" href="http://www.securitybydefault.com/"&gt Securitybydefault.com &lt/a&gt <br>
-										  &lta class=" w3-text-blue" href="http://www.elladodelmal.com/"&gt Un informático en el lado del mal &lt/a&gt <br>
-										&lt/div&gt <br>
-									&lt/div&gt <br>		
-								&lt/div&gt <br>
-							</div>
-					</div>
-				</div>
-			</div>
-			<!-------------------------------------------------------->
-			
-			<!--Esto es el segundo ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
-				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animated Accordions:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion animado" que se despliega utilizando los efectos Zoom, Top y Fading, y muestra una serie de links.</p>	
-				
-				<div class="w3-container w3-Acme" >
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
-						<button onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align w3-hover-blue"> Animated Accordion Zoom <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo2a" class="w3-accordion-content w3-animate-zoom">
-						  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
-						  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
-						</div>
-						<button onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Top <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo2b" class="w3-accordion-content w3-animate-top">
-						  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
-						  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
-						</div>
-						<button onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Fading<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo2c" class="w3-accordion-content w3-animate-fading">
-						  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
-						  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informático en el lado del mal</a>
-						</div>
-					</div>
-					
-					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
-						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-						<div class="w3-code htmlHigh notranslate w3-small">			
+						<!--Esto es el primer ejemplo-->
+						<div class="w3-col m6 l6">
+							<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:80%">
 								
-							&ltdiv class="w3-container w3-Acme" &gt <br>
-							&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" &gt <br>
-									&ltbutton onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align w3-hover-blue"&gt Animated Accordion Zoom &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-									&ltdiv id="ejemplo2a" class="w3-accordion-content w3-animate-zoom" &gt <br>
-										&lta class="w3-text-blue" href="http://web.gencat.cat/ca/inici/" &gt Gencat.cat &lt/a &gt <br>
-										&lta class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat &lt/a &gt <br>
-									&lt/div&gt <br>
-									&ltbutton onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Top &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-									&ltdiv id="ejemplo2b" class="w3-accordion-content w3-animate-top"&gt <br>
-										&lta class="w3-text-blue" href="https://www.feec.cat/"&gt Feec.cat &lt/a&gt <br>
-										&lta class=" w3-text-blue" href="http://www.fedme.es/"&gt Fedme.es &lt/a&gt <br>
-									&lt/div&gt <br>
-									&ltbutton onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Fading &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-									&ltdiv id="ejemplo2c" class="w3-accordion-content w3-animate-fading"&gt <br>
-										&lta class="w3-text-blue" href="http://www.securitybydefault.com/"&gt Securitybydefault.com &lt/a&gt <br>
-										&lta class=" w3-text-blue" href="http://www.elladodelmal.com/"&gt Un informático en el lado del mal &lt/a&gt <br>
-									&lt/div&gt <br>
-								&lt/div&gt <br>
-							&lt/div&gt	 <br>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-------------------------------------------------------->
-			
-			<!--Esto es el tercer ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
-				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with lists:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una lista con nombres,
-				con su icono correspondiente.</p>	
-				
-				<div class="w3-container w3-Acme" >
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
-						<button onclick="ejemplo('ejemplo3a')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"> Personajes Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo3a" class="w3-accordion-content">
-						  <ul class="w3-ul">
-							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Pvt. Adrian Caparzo</li>
-							<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Daniel Jackson</li>
-							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Irwin Wade</li>
-						  </ul>  
-						</div>
-						<button onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Stargate SG-1<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo3b" class="w3-accordion-content">
-						  <ul class="w3-ul">
-							<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Samantha Carter</li>
-							<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Teal'c</li>
-							<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Jack O'Neill</li>
-						  </ul>
-						</div>
-						<button onclick="ejemplo('ejemplo3c')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Siete años en el Tibet<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo3c" class="w3-accordion-content">
-							<ul class="w3-ul">
-								<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Lhakpa Tsamchoe</li>
-								<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Peter Aufschnaiter</li>
-								<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Ngawang Jigme</li>
-							</ul>
-						</div>
-					</div>
-					
-					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
-						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-						<div class="w3-code htmlHigh notranslate w3-small">			
+								<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with links:</h5>
+								<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una serie de links.<br>&emsp;</p>	
+								
+								<div class="w3-container w3-Acme" >
+									<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
+										<button onclick="ejemplo('ejemplo1a')" class="w3-btn-block w3-left-align">Accordion 1 <i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo1a" class="w3-accordion-content ">
+										  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
+										  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
+										  <a class="w3-text-blue" href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat</a>
+										</div>
+										<button onclick="ejemplo('ejemplo1b')" class="w3-btn-block w3-left-align"> Accordion 2 <i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo1b" class="w3-accordion-content ">
+										  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
+										  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
+										  <a class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org</a>
+										</div>
+										<button onclick="ejemplo('ejemplo1c')" class="w3-btn-block w3-left-align"> Accordion 3 <i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo1c" class="w3-accordion-content ">
+										  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
+										  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informático en el lado del mal</a>
+										</div>
+									</div>
+									
+									<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+										<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+											<div class="w3-code htmlHigh notranslate w3-small">			
+												&lt;div class="w3-container w3-Acme"&gt;<br>
+													&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" &gt <br>
+														&ltbutton onclick="ejemplo1('ejemplo1a')" class="w3-btn-block w3-left-align"&gtAccordion 1 &lti class="fa fa-caret-down"&gt&lt/i&gt &lt/button&gt <br>
+														&ltdiv id="ejemplo1a" class="w3-accordion-content "&gt <br>
+															 &lta class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat&lt/a&gt <br>
+															 &lta class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat&lt/a&gt <br>
+															 &lta class="w3-text-blue" href="http://parcsnaturals.gencat.cat/es/">Parcsnaturals.cat&lt/a&gt <br>
+														&lt/div&gt <br>
+														&ltbutton onclick="ejemplo1('ejemplo1b')" class="w3-btn-block w3-left-align"&gt Accordion 2 &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+														&ltdiv id="ejemplo1b" class="w3-accordion-content "&gt <br>
+															&lta class="w3-text-blue" href="https://www.feec.cat/">Feec.cat&lt/a&gt <br>
+															&lta class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es&lt/a&gt <br>
+															 &lta class="w3-text-blue" href="http://theuiaa.org/">Uiaa.org&lt/a&gt <br>
+														&lt/div&gt <br>
+														&ltbutton onclick="ejemplo('ejemplo1c')" class="w3-btn-block w3-left-align"&gt Accordion 3 &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+														&ltdiv id="ejemplo1c" class="w3-accordion-content "&gt <br>
+														  &lta class="w3-text-blue" href="http://www.securitybydefault.com/"&gt Securitybydefault.com &lt/a&gt <br>
+														  &lta class=" w3-text-blue" href="http://www.elladodelmal.com/"&gt Un informático en el lado del mal &lt/a&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>		
+												&lt/div&gt <br>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<!-------------------------------------------------------->
 						
-							&ltdiv class="w3-container w3-Acme" &gt <br>
-								&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" &gt <br>
-									&ltbutton onclick="ejemplo('ejemplo3a')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gt Personajes Salvar al soldado Ryan &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-									&ltdiv id="ejemplo3a" class="w3-accordion-content"&gt <br>
-										&ltul class="w3-ul"&gt <br>
-											&ltli&gt &ltimg src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gt Pvt. Adrian Caparzo&lt/li&gt <br>
-											&ltli> &ltimg src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtDaniel Jackson&lt/li&gt <br>
-											&ltli> &ltimg src="imagenes/iavatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtIrwin Wade&lt/li&gt <br>
-										&lt/ul&gt   <br>
-									&lt/div&gt <br>
-									&ltbutton onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gtPersonajes Stargate SG-1&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-									&ltdiv id="ejemplo3b" class="w3-accordion-content"&gt <br>
-										&ltul class="w3-ul"&gt <br>
-											&ltli&gt &ltimg src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtSamantha Carter&lt/li&gt <br>
-											&ltli&gt &ltimg src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtTeal'c&lt/li&gt <br>
-											&ltli&gt &ltimg src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtJack O'Neill&lt/li&gt <br>
-										&lt/ul&gt <br>
-									&lt/div&gt <br>
-									&ltbutton onclick="ejemplo('ejemplo3c')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gtPersonajes Siete años en el Tibet&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-									&ltdiv id="ejemplo3c" class="w3-accordion-content"&gt <br>
-										&ltul class="w3-ul"&gt	 <br>
-											&ltli&gt &ltimg src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtLhakpa Tsamchoe&lt/li&gt <br>
-											&ltli&gt &ltimg src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtPeter Aufschnaiter&lt/li&gt <br>
-											&ltli&gt &ltimg src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtNgawang Jigme&lt/li&gt <br>
-										&lt/ul>&gt <br>
-									&lt/div>&gt <br>
-								&lt/div>&gt <br>
-							&lt/div>&gt <br>
+						<!--Esto es el segundo ejemplo-->
+						<div class="w3-col m6 l6">
+							<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:80%">
+								
+								<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Animated Accordions:</h5>
+								<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion animado" que se despliega utilizando los efectos Zoom, Top y Fading, y muestra una serie de links.</p>	
+								
+								<div class="w3-container w3-Acme" >
+									<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" >
+										<button onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align w3-hover-blue"> Animated Accordion Zoom <i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo2a" class="w3-accordion-content w3-animate-zoom">
+										  <a class="w3-text-blue" href="http://web.gencat.cat/ca/inici/">Gencat.cat</a>
+										  <a class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat</a>
+										</div>
+										<button onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Top <i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo2b" class="w3-accordion-content w3-animate-top">
+										  <a class="w3-text-blue" href="https://www.feec.cat/">Feec.cat</a>
+										  <a class=" w3-text-blue" href="http://www.fedme.es/">Fedme.es</a>
+										</div>
+										<button onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Fading<i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo2c" class="w3-accordion-content w3-animate-fading">
+										  <a class="w3-text-blue" href="http://www.securitybydefault.com/">Securitybydefault.com</a>
+										  <a class=" w3-text-blue" href="http://www.elladodelmal.com/">Un informático en el lado del mal</a>
+										</div>
+									</div>
+									
+									<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+										<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+										<div class="w3-code htmlHigh notranslate w3-small">			
+												
+											&ltdiv class="w3-container w3-Acme" &gt <br>
+											&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right " style="width:93%" &gt <br>
+													&ltbutton onclick="ejemplo('ejemplo2a')" class="w3-btn-block w3-left-align w3-hover-blue"&gt Animated Accordion Zoom &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+													&ltdiv id="ejemplo2a" class="w3-accordion-content w3-animate-zoom" &gt <br>
+														&lta class="w3-text-blue" href="http://web.gencat.cat/ca/inici/" &gt Gencat.cat &lt/a &gt <br>
+														&lta class="w3-text-blue" href="http://www.meteo.cat/">Meteocat.cat &lt/a &gt <br>
+													&lt/div&gt <br>
+													&ltbutton onclick="ejemplo('ejemplo2b')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Top &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+													&ltdiv id="ejemplo2b" class="w3-accordion-content w3-animate-top"&gt <br>
+														&lta class="w3-text-blue" href="https://www.feec.cat/"&gt Feec.cat &lt/a&gt <br>
+														&lta class=" w3-text-blue" href="http://www.fedme.es/"&gt Fedme.es &lt/a&gt <br>
+													&lt/div&gt <br>
+													&ltbutton onclick="ejemplo('ejemplo2c')" class="w3-btn-block w3-left-align w3-hover-blue">Animated  Accordion Fading &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+													&ltdiv id="ejemplo2c" class="w3-accordion-content w3-animate-fading"&gt <br>
+														&lta class="w3-text-blue" href="http://www.securitybydefault.com/"&gt Securitybydefault.com &lt/a&gt <br>
+														&lta class=" w3-text-blue" href="http://www.elladodelmal.com/"&gt Un informático en el lado del mal &lt/a&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/div&gt	 <br>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</div>
+			<!-------------------------------------------------------->
+			<div class="w3-container">
+				<div class="w3-row">
+						<!--Esto es el tercer ejemplo-->	
+						<div class="w3-col m6 l6">
+							<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:80%">
+								
+								<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion with lists:</h5>
+								<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra una lista con nombres,
+								con su icono correspondiente.</p>	
+								
+								<div class="w3-container w3-Acme" >
+									<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
+										<button onclick="ejemplo('ejemplo3a')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"> Personajes Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo3a" class="w3-accordion-content">
+										  <ul class="w3-ul">
+											<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Pvt. Adrian Caparzo</li>
+											<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Daniel Jackson</li>
+											<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Irwin Wade</li>
+										  </ul>  
+										</div>
+										<button onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Stargate SG-1<i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo3b" class="w3-accordion-content">
+										  <ul class="w3-ul">
+											<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Samantha Carter</li>
+											<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Teal'c</li>
+											<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Jack O'Neill</li>
+										  </ul>
+										</div>
+										<button onclick="ejemplo('ejemplo3c')" class="w3-btn-block w3-left-align w3-hover-blue w3-green">Personajes Siete años en el Tibet<i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo3c" class="w3-accordion-content">
+											<ul class="w3-ul">
+												<li><img src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Lhakpa Tsamchoe</li>
+												<li><img src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Peter Aufschnaiter</li>
+												<li><img src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px">Ngawang Jigme</li>
+											</ul>
+										</div>
+									</div>
+									
+									<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+										<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+										<div class="w3-code htmlHigh notranslate w3-small">			
+										
+											&ltdiv class="w3-container w3-Acme" &gt <br>
+												&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" &gt <br>
+													&ltbutton onclick="ejemplo('ejemplo3a')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gt Personajes Salvar al soldado Ryan &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+													&ltdiv id="ejemplo3a" class="w3-accordion-content"&gt <br>
+														&ltul class="w3-ul"&gt <br>
+															&ltli&gt &ltimg src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gt Pvt. Adrian Caparzo&lt/li&gt <br>
+															&ltli> &ltimg src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtDaniel Jackson&lt/li&gt <br>
+															&ltli> &ltimg src="imagenes/iavatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtIrwin Wade&lt/li&gt <br>
+														&lt/ul&gt   <br>
+													&lt/div&gt <br>
+													&ltbutton onclick="ejemplo('ejemplo3b')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gtPersonajes Stargate SG-1&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+													&ltdiv id="ejemplo3b" class="w3-accordion-content"&gt <br>
+														&ltul class="w3-ul"&gt <br>
+															&ltli&gt &ltimg src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtSamantha Carter&lt/li&gt <br>
+															&ltli&gt &ltimg src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtTeal'c&lt/li&gt <br>
+															&ltli&gt &ltimg src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtJack O'Neill&lt/li&gt <br>
+														&lt/ul&gt <br>
+													&lt/div&gt <br>
+													&ltbutton onclick="ejemplo('ejemplo3c')" class="w3-btn-block w3-left-align w3-hover-blue w3-green"&gtPersonajes Siete años en el Tibet&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+													&ltdiv id="ejemplo3c" class="w3-accordion-content"&gt <br>
+														&ltul class="w3-ul"&gt	 <br>
+															&ltli&gt &ltimg src="imagenes/avatar3.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtLhakpa Tsamchoe&lt/li&gt <br>
+															&ltli&gt &ltimg src="imagenes/avatar1.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtPeter Aufschnaiter&lt/li&gt <br>
+															&ltli&gt &ltimg src="imagenes/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:25px"&gtNgawang Jigme&lt/li&gt <br>
+														&lt/ul>&gt <br>
+													&lt/div>&gt <br>
+												&lt/div>&gt <br>
+											&lt/div>&gt <br>
 
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!-------------------------------------------------------->
-			
-			<!--Esto es el cuarto ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:35%">
-				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion Content:</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra contenido con infomacion diversa.</p>	
-				
-				<div class="w3-container w3-Acme">
-					<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
-						<button onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"> Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo4a" class="w3-accordion-content">
-							<h5 class="w3-text-shadow">Sinopsis:</h5>
-							<p>Segunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en Normandía, a un grupo de soldados americanos se le encomienda una 
-							peligrosa misión: poner a salvo al soldado James Ryan. Los hombres de la patrulla
-							del capitán John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra. 
-							Lo único que se sabe del soldado Ryan es que se lanzó con su escuadrón de paracaidistas detrás de las líneas enemigas. (FILMAFFINITY)</p>
-						</div>
-						<button onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Stargate SG-1<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo4b" class="w3-accordion-content">
-						  <h5 class="w3-text-shadow">Sinopsis:</h5>
-							<p>Esta es la lista de episodios de Stargate SG-1, serie de televisión de ciencia ficción militar producida en Canadá y Estados Unidos y creada por Brad Wright y Jonathan Glassner. 
-							La serie continúa la historia de la película de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueólogo Daniel Jackson 
-							empleaban un antiguo aparato alienígena llamado «Stargate» para viajar a un planeta en el que un extraterrestre llamado Ra oprimía a los humanos que allí vivían haciéndose pasar 
-							por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un año después de los sucesos de la película,1 muestra que Ra no fue el único alienígena que utilizó 
-							los Stargates para transportar esclavos humanos a muchos planetas durante miles de años.</p>
-						</div>
-						<button onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Siete años en el Tibet<i class="fa fa-caret-down"></i></button>
-						<div id="ejemplo4c" class="w3-accordion-content">
-							<h5 class="w3-text-shadow">Sinopsis:</h5>
-							<p>Basada en un hecho real, Siete Años en el Tíbet narra la aventura de Heinrich Harrer, un alpinista austríaco que en otoño de 1939 inició una expedición para escalar
-							el Everest. Su intento se truncó por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentración inglés en la India junto con 
-							su compañero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del Tíbet, un lugar
-							prohibido para los extranjeros. Allí Harrer entabló una profunda amistad con el actual Dalai Lama, un niño por entonces, y se contagió de su 
-							espiritualidad.</p>
-						</div>
-					</div>
-					
-					<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
-						<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
-						<div class="w3-code htmlHigh notranslate w3-small">			
-							
-							&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" &gt <br>
-								&ltbutton onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gt Salvar al soldado Ryan &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-								&ltdiv id="ejemplo4a" class="w3-accordion-content"&gt <br>
-									&lth5 class="w3-text-shadow">Sinopsis:&lt/h5&gt <br>
-									&ltp&gtSegunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en Normandía, a un grupo de soldados americanos se le encomienda una  <br>
-									peligrosa misión: poner a salvo al soldado James Ryan. Los hombres de la patrulla <br>
-									del capitán John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra.  <br>
-									Lo único que se sabe del soldado Ryan es que se lanzó con su escuadrón de paracaidistas detrás de las líneas enemigas. (FILMAFFINITY)&lt/p&gt <br>
-								&lt/div&gt <br>
-								&ltbutton onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gtStargate SG-1&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-								&ltdiv id="ejemplo4b" class="w3-accordion-content"&gt <br>
-									 &lth5 class="w3-text-shadow">Sinopsis:&lt/h5&gt <br>
-									&ltp&gtEsta es la lista de episodios de Stargate SG-1, serie de televisión de ciencia ficción militar producida en Canadá y Estados Unidos y creada por Brad Wright y Jonathan Glassner.  <br>
-									La serie continúa la historia de la película de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueólogo Daniel Jackson  <br>
-									empleaban un antiguo aparato alienígena llamado «Stargate» para viajar a un planeta en el que un extraterrestre llamado Ra oprimía a los humanos que allí vivían haciéndose pasar  <br>
-									por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un año después de los sucesos de la película,1 muestra que Ra no fue el único alienígena que utilizó  <br>
-									los Stargates para transportar esclavos humanos a muchos planetas durante miles de años.&lt/p&gt <br>
-								&lt/div&gt <br>
-								&ltbutton onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gtSiete años en el Tibet&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
-								&ltdiv id="ejemplo4c" class="w3-accordion-content"&gt <br>
-									&lth5 class="w3-text-shadow"&gtSinopsis:&lt/h5&gt <br>
-									&ltp&gtBasada en un hecho real, Siete Años en el Tíbet narra la aventura de Heinrich Harrer, un alpinista austríaco que en otoño de 1939 inició una expedición para escalar <br>
-									el Everest. Su intento se truncó por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentración inglés en la India junto con  <br>
-									su compañero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del Tíbet, un lugar <br>
-									prohibido para los extranjeros. Allí Harrer entabló una profunda amistad con el actual Dalai Lama, un niño por entonces, y se contagió de su  <br>
-									espiritualidad.&lt/p&gt <br>
-								&lt/div&gt <br>
-							&lt/div&gt <br>
+						<!-------------------------------------------------------->
 						
+						<!--Esto es el cuarto ejemplo-->
+						<div class="w3-col m6 l6">						
+							<div class="w3-card-12 w3-right w3-margin-right w3-margin-bottom w3-light-grey w3-border" style="width:80%">
+								
+								<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Accordion Content:</h5>
+								<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Este ejemplo representa un "Acordion" que al desplegarse muestra contenido con infomacion diversa.</p>	
+								
+								<div class="w3-container w3-Acme">
+									<div class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" >
+										<button onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"> Salvar al soldado Ryan <i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo4a" class="w3-accordion-content">
+											<h5 class="w3-text-shadow">Sinopsis:</h5>
+											<p>Segunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en Normandía, a un grupo de soldados americanos se le encomienda una 
+											peligrosa misión: poner a salvo al soldado James Ryan. Los hombres de la patrulla
+											del capitán John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra. 
+											Lo único que se sabe del soldado Ryan es que se lanzó con su escuadrón de paracaidistas detrás de las líneas enemigas. (FILMAFFINITY)</p>
+										</div>
+										<button onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Stargate SG-1<i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo4b" class="w3-accordion-content">
+										  <h5 class="w3-text-shadow">Sinopsis:</h5>
+											<p>Esta es la lista de episodios de Stargate SG-1, serie de televisión de ciencia ficción militar producida en Canadá y Estados Unidos y creada por Brad Wright y Jonathan Glassner. 
+											La serie continúa la historia de la película de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueólogo Daniel Jackson 
+											empleaban un antiguo aparato alienígena llamado «Stargate» para viajar a un planeta en el que un extraterrestre llamado Ra oprimía a los humanos que allí vivían haciéndose pasar 
+											por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un año después de los sucesos de la película,1 muestra que Ra no fue el único alienígena que utilizó 
+											los Stargates para transportar esclavos humanos a muchos planetas durante miles de años.</p>
+										</div>
+										<button onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green">Siete años en el Tibet<i class="fa fa-caret-down"></i></button>
+										<div id="ejemplo4c" class="w3-accordion-content">
+											<h5 class="w3-text-shadow">Sinopsis:</h5>
+											<p>Basada en un hecho real, Siete Años en el Tíbet narra la aventura de Heinrich Harrer, un alpinista austríaco que en otoño de 1939 inició una expedición para escalar
+											el Everest. Su intento se truncó por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentración inglés en la India junto con 
+											su compañero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del Tíbet, un lugar
+											prohibido para los extranjeros. Allí Harrer entabló una profunda amistad con el actual Dalai Lama, un niño por entonces, y se contagió de su 
+											espiritualidad.</p>
+										</div>
+									</div>
+									
+									<div class="w3-margin-left w3-margin-right w3-tiny w3-example w3-overflow " >
+										<h6 class="w3-wide w3-Acme w3-margin-left ">Codigo de ejemplo:</h6>
+										<div class="w3-code htmlHigh notranslate w3-small">			
+											
+											&ltdiv class="w3-accordion w3-light-grey w3-margin-left w3-margin-right" style="width:93%" &gt <br>
+												&ltbutton onclick="ejemplo('ejemplo4a')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gt Salvar al soldado Ryan &lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+												&ltdiv id="ejemplo4a" class="w3-accordion-content"&gt <br>
+													&lth5 class="w3-text-shadow">Sinopsis:&lt/h5&gt <br>
+													&ltp&gtSegunda Guerra Mundial (1939-1945). Tras el desembarco de los Aliados en Normandía, a un grupo de soldados americanos se le encomienda una  <br>
+													peligrosa misión: poner a salvo al soldado James Ryan. Los hombres de la patrulla <br>
+													del capitán John Miller deben arriesgar sus vidas para encontrar a este soldado, cuyos tres hermanos han muerto en la guerra.  <br>
+													Lo único que se sabe del soldado Ryan es que se lanzó con su escuadrón de paracaidistas detrás de las líneas enemigas. (FILMAFFINITY)&lt/p&gt <br>
+												&lt/div&gt <br>
+												&ltbutton onclick="ejemplo('ejemplo4b')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gtStargate SG-1&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+												&ltdiv id="ejemplo4b" class="w3-accordion-content"&gt <br>
+													 &lth5 class="w3-text-shadow">Sinopsis:&lt/h5&gt <br>
+													&ltp&gtEsta es la lista de episodios de Stargate SG-1, serie de televisión de ciencia ficción militar producida en Canadá y Estados Unidos y creada por Brad Wright y Jonathan Glassner.  <br>
+													La serie continúa la historia de la película de 1994 Stargate, en la que el comando militar liderado por el coronel Jack O'Neill y aconsejado por el arqueólogo Daniel Jackson  <br>
+													empleaban un antiguo aparato alienígena llamado «Stargate» para viajar a un planeta en el que un extraterrestre llamado Ra oprimía a los humanos que allí vivían haciéndose pasar  <br>
+													por un dios. El episodio piloto de la serie, que tiene lugar aproximadamente un año después de los sucesos de la película,1 muestra que Ra no fue el único alienígena que utilizó  <br>
+													los Stargates para transportar esclavos humanos a muchos planetas durante miles de años.&lt/p&gt <br>
+												&lt/div&gt <br>
+												&ltbutton onclick="ejemplo('ejemplo4c')" class="w3-btn-block w3-left-align w3-hover-black w3-green"&gtSiete años en el Tibet&lti class="fa fa-caret-down"&gt &lt/i&gt &lt/button&gt <br>
+												&ltdiv id="ejemplo4c" class="w3-accordion-content"&gt <br>
+													&lth5 class="w3-text-shadow"&gtSinopsis:&lt/h5&gt <br>
+													&ltp&gtBasada en un hecho real, Siete Años en el Tíbet narra la aventura de Heinrich Harrer, un alpinista austríaco que en otoño de 1939 inició una expedición para escalar <br>
+													el Everest. Su intento se truncó por el estallido de la Segunda Guerra Mundial, y fue confinado a un campo de concentración inglés en la India junto con  <br>
+													su compañero Peter Aufshnaiter. Los dos alpinistas consiguieron escapar, y en su huida encontraron refugio en la sagrada tierra del Tíbet, un lugar <br>
+													prohibido para los extranjeros. Allí Harrer entabló una profunda amistad con el actual Dalai Lama, un niño por entonces, y se contagió de su  <br>
+													espiritualidad.&lt/p&gt <br>
+												&lt/div&gt <br>
+											&lt/div&gt <br>
+										
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
+				</div>		
 			</div>
 			<!-------------------------------------------------------->
 		</div>
