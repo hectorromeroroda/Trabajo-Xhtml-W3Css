@@ -56,10 +56,13 @@
 		</div>
 		
 		<!--Esto es la zona de los ejemplos-->	
-		<div class="w3-container w3-Acme">		
-			
-			<!--Esto es el segundo ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right w3-margin-left w3-margin-bottom w3-light-grey w3-border" style="width:35%">
+		<div class="w3-container w3-Acme w3-right" style="width:80%">		
+		
+		<div class="w3-container">
+			<div class="w3-row">
+			  <div class="w3-col m6 l6">
+					<!--Esto es el segundo ejemplo-->	
+			<div class="w3-card-12 w3-right w3-margin-right w3-margin-left w3-margin-bottom w3-light-grey w3-border" style="width:80%">
 			
 				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Lista como una card</h5>
 				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small"> Como una card las listas son mas bonitas.</p>	
@@ -86,9 +89,10 @@
 			
 			</div>
 			<!-------------------------------------------------------->
-			
-			<!--Esto es el primer ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
+			  </div>
+			  <div class="w3-col m6 l6">
+				<!--Esto es el primer ejemplo-->	
+			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:80%">
 				
 				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Lista básica</h5>
 				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small"> Muy bonita pero algo sosa.</p>	
@@ -114,65 +118,77 @@
 				
 			</div>
 			<!-------------------------------------------------------->
-			
-			<!--Esto es el cuarto ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right w3-margin-left w3-margin-bottom w3-light-grey w3-border" style="width:35%">
 				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Lista sombreada</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Cuando paso el cursor por la lista, esta se oscurece.</p>	
+			  </div>
+			</div>
+		
+		
+		</div>
+		
+		<div class="w3-container">
+			<div class="w3-row">
+			  <div class="w3-col m6 l6">
+				<!--Esto es el cuarto ejemplo-->	
+				<div class="w3-card-12 w3-right w3-margin-right w3-margin-left w3-margin-bottom w3-light-grey w3-border" style="width:80%">
+					
+					<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Lista sombreada</h5>
+					<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Cuando paso el cursor por la lista, esta se oscurece.</p>	
+					
+						<ul class="w3-ul w3-hoverable" style="width:90%">
+							<li>Objeto 1</li>
+							<li>Objeto 2</li>
+							<li>Objeto 3</li>
+							<li>Objeto 4</li>
+						</ul>
+					
+					<p>Salta a la vista que cuando pasamos el cursor por uno de los objetos de la lista,
+					estos se oscurecen.</p>
+					
+					<div class="w3-code htmlHigh notranslate">
+						&lt;ul class="w3-ul w3-hoverable" style="width:90%&gt;<br>
+							&lt;li>Objeto 1&lt;/li&gt;<br>
+							&lt;li>Objeto 2&lt;/li&gt;<br>
+							&lt;li>Objeto 3&lt;/li&gt;<br>
+							&lt;li>Objeto 4&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+					</div>
+					
+				</div>		
+			</div>
+				<!-------------------------------------------------------->
 				
-					<ul class="w3-ul w3-hoverable" style="width:90%">
-						<li>Objeto 1</li>
-						<li>Objeto 2</li>
-						<li>Objeto 3</li>
-						<li>Objeto 4</li>
-					</ul>
-				
-				<p>Salta a la vista que cuando pasamos el cursor por uno de los objetos de la lista,
-				estos se oscurecen.</p>
-				
-				<div class="w3-code htmlHigh notranslate">
-					&lt;ul class="w3-ul w3-hoverable" style="width:90%&gt;<br>
-						&lt;li>Objeto 1&lt;/li&gt;<br>
-						&lt;li>Objeto 2&lt;/li&gt;<br>
-						&lt;li>Objeto 3&lt;/li&gt;<br>
-						&lt;li>Objeto 4&lt;/li&gt;<br>
-					&lt;/ul&gt;<br>
+				<!--Esto es el tercer ejemplo-->	
+				<div class="w3-col m6 l6">
+					<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:80%">
+						
+						<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Lista coloreada</h5>
+						<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Hay que escojer los colores adecuados.</p>	
+						
+							<ul class="w3-ul w3-blue" style="width:90%">
+								<li>Objeto 1</li>
+								<li>Objeto 2</li>
+								<li>Objeto 3</li>
+								<li>Objeto 4</li>
+							</ul>
+						
+						<p>Como puedes ver, la lista ahora es azul, esto es debido a la etiqueta
+						"w3-(color deseado)".</p>
+						
+						<div class="w3-code htmlHigh notranslate">
+							&lt;ul class="w3-ul w3-blue" style="width:90%&gt;<br>
+								&lt;li>Objeto 1&lt;/li&gt;<br>
+								&lt;li>Objeto 2&lt;/li&gt;<br>
+								&lt;li>Objeto 3&lt;/li&gt;<br>
+								&lt;li>Objeto 4&lt;/li&gt;<br>
+							&lt;/ul&gt;<br>
+						</div>
+						
+					</div>
 				</div>
-				
+				<!-------------------------------------------------------->
+			
 				
 			</div>
-			<!-------------------------------------------------------->
-			
-			<!--Esto es el tercer ejemplo-->	
-			<div class="w3-card-12 w3-right w3-margin-right_60px w3-margin-bottom w3-light-grey w3-border" style="width:35%">
-				
-				<h5 class="w3-wide w3-text-shadow w3-Acme w3-margin-left">Lista coloreada</h5>
-				<p class=" w3-margin-left w3-margin-right w3-border-bottom w3-small">Hay que escojer los colores adecuados.</p>	
-				
-					<ul class="w3-ul w3-blue" style="width:90%">
-						<li>Objeto 1</li>
-						<li>Objeto 2</li>
-						<li>Objeto 3</li>
-						<li>Objeto 4</li>
-					</ul>
-				
-				<p>Como puedes ver, la lista ahora es azul, esto es debido a la etiqueta
-				"w3-(color deseado)".</p>
-				
-				<div class="w3-code htmlHigh notranslate">
-					&lt;ul class="w3-ul w3-blue" style="width:90%&gt;<br>
-						&lt;li>Objeto 1&lt;/li&gt;<br>
-						&lt;li>Objeto 2&lt;/li&gt;<br>
-						&lt;li>Objeto 3&lt;/li&gt;<br>
-						&lt;li>Objeto 4&lt;/li&gt;<br>
-					&lt;/ul&gt;<br>
-				</div>
-				
-			</div>
-			<!-------------------------------------------------------->
-			
-			
 		</div>
 		
 	<!--Esto es el pie de pagina-->	
@@ -183,6 +199,10 @@
 			</div>		
 		</footer>
 	</body>
+	<script src="http://www.w3schools.com/lib/w3codecolor.js"></script>
+	<script>
+		w3CodeColor();
+	</script>
 
 </html>
 
